@@ -5,14 +5,15 @@ import uuid
 import logging
 
 class Job:
-    def __init__(self, title, description, link, company, source, timestamp=None):
+    def __init__(self, title=None, description=None, link=None, company=None, source=None, timestamp=None, location=None):
         self.id = str(uuid.uuid4())
-        self.title = title
-        self.description = description
-        self.link = link
-        self.company = company
-        self.source = source
+        self.title = title or 'non'
+        self.description = description or 'non'
+        self.link = link or 'non'
+        self.company = company or 'non'
+        self.source = source or 'non'
         self.timestamp = timestamp or datetime.now().isoformat()
+        self.location = location or 'non'
 
     def to_dict(self):
         return {
@@ -22,7 +23,8 @@ class Job:
             'link': self.link,
             'company': self.company,
             'source': self.source,
-            'timestamp': self.timestamp
+            'timestamp': self.timestamp,
+            'location': self.location
         }
 
 class DataStorage:
@@ -43,7 +45,8 @@ class DataStorage:
                     link TEXT,
                     company TEXT,
                     source TEXT,
-                    timestamp TEXT
+                    timestamp TEXT,
+                    location TEXT
                 )
             """)
 
@@ -52,10 +55,10 @@ class DataStorage:
         self.jobs.append(job_dict)
         with self.conn:
             self.conn.execute(
-                'INSERT OR IGNORE INTO jobs (id, title, description, link, company, source, timestamp) '
-                'VALUES (?, ?, ?, ?, ?, ?, ?)',
+                'INSERT OR IGNORE INTO jobs (id, title, description, link, company, source, timestamp, location) '
+                'VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
                 (job_dict['id'], job_dict['title'], job_dict['description'], 
-                 job_dict['link'], job_dict['company'], job_dict['source'], job_dict['timestamp'])
+                 job_dict['link'], job_dict['company'], job_dict['source'], job_dict['timestamp'], job_dict['location'])
             )
 
     def save(self):

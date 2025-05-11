@@ -17,13 +17,13 @@ def main():
 
     # Run Selenium for LinkedIn, Freelancer, and Wuzzuf
     linkedin_scraper = LinkedInScraper(storage, query='software engineer')
-    linkedin_scraper.scrape(max_pages=15)
+    linkedin_scraper.scrape(max_pages=1)
     
     freelancer_scraper = FreelancerScraper(storage, query='web development')
-    freelancer_scraper.scrape(max_pages=15)
+    freelancer_scraper.scrape(max_pages=1)
     
     wuzzuf_scraper = WuzzufScraper(storage, query='software engineer')
-    wuzzuf_scraper.scrape(max_pages=15)
+    wuzzuf_scraper.scrape(max_pages=1)
 
     # Save data
     storage.save()
@@ -40,8 +40,8 @@ def main():
     df_duplicates = pd.read_sql_query("SELECT link, COUNT(*) as count FROM jobs GROUP BY link HAVING count > 1", storage.conn)
     logging.info(f"Duplicates found:\n{df_duplicates}")
 
-    # Check for missing fields
-    df_missing = pd.read_sql_query("SELECT * FROM jobs WHERE title IS NULL OR link IS NULL", storage.conn)
+    # Check for missing fields (now everything should be at least 'non')
+    df_missing = pd.read_sql_query("SELECT * FROM jobs WHERE title IS NULL OR description IS NULL OR link IS NULL OR company IS NULL OR source IS NULL OR location IS NULL", storage.conn)
     logging.info(f"Jobs with missing fields:\n{df_missing}")
 
 if __name__ == '__main__':

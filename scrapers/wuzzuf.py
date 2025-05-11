@@ -49,7 +49,8 @@ class WuzzufScraper:
                         for job in job_cards:
                             title_elem = job.select_one("h2.css-m604qf a")
                             title = title_elem and title_elem.text.strip()
-                            company = job.select_one("a.css-17s97q8") and job.select_one("a.css-17s97q8").text.strip()
+                            company_elem = job.select_one("a.css-17s97q8")
+                            company = company_elem and company_elem.text.strip()
                             location = job.select_one("span.css-5wys0k") and job.select_one("span.css-5wys0k").text.strip()
                             job_type = job.select_one("span.css-1ve4b75.eoyjyou0") and job.select_one("span.css-1ve4b75.eoyjyou0").text.strip()
                             site = job.select_one("span.css-o1vzmt.eoyjyou0") and job.select_one("span.css-o1vzmt.eoyjyou0").text.strip()
@@ -60,7 +61,9 @@ class WuzzufScraper:
                                     title=title,
                                     description=description,
                                     link=link,
-                                    source='Wuzzuf'
+                                    company=company,
+                                    source='Wuzzuf',
+                                    location=location
                                 )
                                 self.storage.add_job(job_data)
                                 jobs_found += 1

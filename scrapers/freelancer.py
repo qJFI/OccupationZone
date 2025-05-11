@@ -5,6 +5,7 @@ import time
 import random
 import logging
 from models import Job
+from urllib.parse import urljoin
 
 class FreelancerScraper:
     def __init__(self, storage, query='web development', proxy=None):
@@ -37,11 +38,13 @@ class FreelancerScraper:
                             title = job.select_one('.JobSearchCard-primary-heading-link') and job.select_one('.JobSearchCard-primary-heading-link').text.strip()
                             description = job.select_one('.JobSearchCard-primary-description') and job.select_one('.JobSearchCard-primary-description').text.strip()
                             link = job.select_one('a') and urljoin(self.base_url, job.select_one('a')['href'])
+                            company = job.select_one('.JobSearchCard-primary-heading-meta') and job.select_one('.JobSearchCard-primary-heading-meta').text.strip()
                             if title and link:
                                 job_data = Job(
                                     title=title,
                                     description=description or '',
                                     link=link,
+                                    company=company,
                                     source='Freelancer'
                                 )
                                 self.storage.add_job(job_data)
