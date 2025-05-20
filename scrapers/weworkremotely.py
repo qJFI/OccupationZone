@@ -18,10 +18,11 @@ import requests
 import xml.etree.ElementTree as ET
 
 class WeWorkRemotelyScraper:
-    def __init__(self, storage, query='software engineer', proxy=None, sitemap_url='https://weworkremotely.com/sitemap.xml'):
+    def __init__(self, storage, query='software engineer', proxy=None):
         self.storage = storage
-        self.query = query.lower()
-        self.sitemap_url = sitemap_url
+        self.query = query
+        self.base_url = 'https://weworkremotely.com'
+        self.search_url = f'{self.base_url}/remote-jobs/search?term={self.query.replace(" ", "+")}'
         self.options = Options()
         self.options.add_argument('--headless')
         self.options.add_argument('--disable-gpu')
@@ -33,82 +34,63 @@ class WeWorkRemotelyScraper:
             self.options.add_argument(f'--proxy-server={proxy}')
 
     def scrape(self, max_pages=1):
-        # Step 1: Parse sitemap for job URLs
-        job_urls = self._get_job_urls_from_sitemap()
-        if not job_urls:
-            logging.error("No job URLs found in sitemap.")
-            return
-        logging.info(f"Found {len(job_urls)} job URLs in sitemap.")
-        
-        # Step 2: Filter by query if provided
-        filtered_urls = [url for url in job_urls if self.query in url.lower()]
-        if not filtered_urls:
-            filtered_urls = job_urls  # fallback to all if none match
-        logging.info(f"Filtered to {len(filtered_urls)} job URLs matching query '{self.query}'.")
-
-        # Step 3: Visit each job URL and extract details
         driver = webdriver.Chrome(options=self.options)
         try:
-            jobs_found = 0
-            for url in filtered_urls[:max_pages]:
-                logging.info(f"Scraping job: {url}")
+            for page in range(max_pages):
+                url = self.search_url + (f'&page={page+1}' if page > 0 else '')
+                logging.info(f"Scraping WeWorkRemotely search page {page+1}: {url}")
                 for attempt in range(3):
                     try:
                         driver.get(url)
-                        time.sleep(random.uniform(2, 4))
+                        time.sleep(random.uniform(3, 5))
                         soup = BeautifulSoup(driver.page_source, 'html.parser')
-                        title_elem = soup.select_one('h1.listing-header-container__title')
-                        if not title_elem:
-                            title_elem = soup.select_one('h1')
-                        title = title_elem.text.strip() if title_elem else 'Unknown'
-                        company_elem = soup.select_one('div.listing-header-container__company span')
-                        if not company_elem:
-                            company_elem = soup.select_one('div.company-card h2.company-name')
-                        company = company_elem.text.strip() if company_elem else 'Unknown'
-                        location_elem = soup.select_one('span.region')
-                        location = location_elem.text.strip() if location_elem else 'Remote'
-                        description_elem = soup.select_one('div.listing-container')
-                        description = description_elem.text.strip() if description_elem else ''
-                        job_data = Job(
-                            title=title,
-                            description=description,
-                            link=url,
-                            company=company,
-                            source='WeWorkRemotely',
-                            location=location
-                        )
-                        self.storage.add_job(job_data)
-                        jobs_found += 1
+                        jobs_found = 0
+                        job_listings = soup.select('li.new-listing-container')
+                        for job in job_listings:
+                            link_elem = job.select_one('a[href^="/remote-jobs/"]')
+                            title_elem = job.select_one('h4.new-listing__header__title')
+                            company_elem = job.select_one('p.new-listing__company-name')
+                            location_elem = job.select_one('p.new-listing__company-headquarters')
+                            categories_elem = job.select('div.new-listing__categories p.new-listing__categories__category')
+                            if link_elem and title_elem and company_elem:
+                                link = urljoin(self.base_url, link_elem['href'])
+                                title = title_elem.text.strip()
+                                company = company_elem.text.strip()
+                                location = location_elem.text.strip() if location_elem else 'Remote'
+                                categories = ', '.join([cat.text.strip() for cat in categories_elem]) if categories_elem else ''
+                                # Optionally, visit the job detail page for full description
+                                description = self._get_job_description(driver, link)
+                                job_data = Job(
+                                    title=title,
+                                    description=description,
+                                    link=link,
+                                    company=company,
+                                    source='WeWorkRemotely',
+                                    location=location
+                                )
+                                self.storage.add_job(job_data)
+                                jobs_found += 1
+                        logging.info(f"WeWorkRemotely page {page+1}: {jobs_found} jobs found")
                         break
                     except Exception as e:
-                        logging.warning(f"Job scrape attempt {attempt+1} failed for {url}: {e}")
+                        logging.warning(f"WeWorkRemotely page {page+1} attempt {attempt+1} failed: {e}")
                         time.sleep(2)
                 else:
-                    logging.error(f"Failed to scrape job after 3 attempts: {url}")
-            logging.info(f"Total jobs scraped from sitemap: {jobs_found}")
+                    logging.error(f"WeWorkRemotely page {page+1} failed after 3 attempts")
         except Exception as e:
-            logging.error(f"WeWorkRemotely sitemap scraping error: {e}")
+            logging.error(f"WeWorkRemotely scraping error: {e}")
         finally:
             driver.quit()
 
-    def _get_job_urls_from_sitemap(self):
+    def _get_job_description(self, driver, job_url):
         try:
-            driver = webdriver.Chrome(options=self.options)
-            try:
-                driver.get(self.sitemap_url)
-                time.sleep(2)
-                xml_content = driver.page_source
-            finally:
-                driver.quit()
-            root = ET.fromstring(xml_content)
-            # Support both <url> and <item> tags
-            urls = []
-            for tag in ['url', 'item']:
-                for elem in root.findall(f'.//{{*}}{tag}'):
-                    loc = elem.find('{*}loc')
-                    if loc is not None and '/listings/' in loc.text:
-                        urls.append(loc.text)
-            return urls
+            driver.get(job_url)
+            time.sleep(random.uniform(2, 4))
+            soup = BeautifulSoup(driver.page_source, 'html.parser')
+            desc_elem = soup.select_one('div.listing-container')
+            if desc_elem:
+                return desc_elem.text.strip()
+            return ''
         except Exception as e:
-            logging.error(f"Failed to parse sitemap with Selenium: {e}")
-            return []
+            logging.warning(f"Failed to get job description from {job_url}: {e}")
+            return ''
