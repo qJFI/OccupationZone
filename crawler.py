@@ -4,6 +4,8 @@ from utils import setup_logging, deduplicate_jobs
 from scrapers.linkedin import LinkedInScraper
 from scrapers.freelancer import FreelancerScraper
 from scrapers.wuzzuf import WuzzufScraper
+from scrapers.remoteok import RemoteOKScraper
+from scrapers.weworkremotely import WeWorkRemotelyScraper
 
 # Configure logging
 setup_logging()
@@ -15,15 +17,24 @@ def main():
     # Remove duplicates at the start (keep the first occurrence by timestamp)
     deduplicate_jobs(storage.conn)
 
+    query = 'engineer'
+
     # Run Selenium for LinkedIn, Freelancer, and Wuzzuf
-    linkedin_scraper = LinkedInScraper(storage, query='software engineer')
+    linkedin_scraper = LinkedInScraper(storage, query=query)
     linkedin_scraper.scrape(max_pages=1)
     
-    freelancer_scraper = FreelancerScraper(storage, query='web development')
+    freelancer_scraper = FreelancerScraper(storage, query=query)
     freelancer_scraper.scrape(max_pages=1)
     
-    wuzzuf_scraper = WuzzufScraper(storage, query='software engineer')
+    wuzzuf_scraper = WuzzufScraper(storage, query=query)
     wuzzuf_scraper.scrape(max_pages=1)
+
+    # Run Selenium for RemoteOK and WeWorkRemotely
+    remoteok_scraper = RemoteOKScraper(storage, query=query)
+    remoteok_scraper.scrape(max_pages=1)
+
+    weworkremotely_scraper = WeWorkRemotelyScraper(storage, query=query)
+    weworkremotely_scraper.scrape(max_pages=10)
 
     # Save data
     storage.save()
