@@ -816,3 +816,60 @@ Stacktrace:
 [INFO. scrapers.upwork, (line #190) - 2025-05-21 17:48:47,580] Added 30 jobs to the database
 [INFO. scrapers.upwork, (line #193) - 2025-05-21 17:48:47,581] Closing browser...
 [INFO. scrapers.upwork, (line #202) - 2025-05-21 17:48:48,124] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #75) - 2025-05-21 19:08:41,970] Launching driver
+[INFO. scrapers.upwork, (line #52) - 2025-05-21 19:08:41,972] Attempt #1/3
+[INFO. scrapers.upwork, (line #81) - 2025-05-21 19:08:50,483] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #83) - 2025-05-21 19:08:59,182] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 19:09:24,186] Switching to main window
+[INFO. scrapers.upwork, (line #90) - 2025-05-21 19:09:24,238] Submitting username
+[INFO. scrapers.upwork, (line #109) - 2025-05-21 19:09:24,606] Submitting password
+[INFO. scrapers.upwork, (line #128) - 2025-05-21 19:09:25,377] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #132) - 2025-05-21 19:09:35,384] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #137) - 2025-05-21 19:09:48,333] Scrolling down page
+[INFO. scrapers.upwork, (line #146) - 2025-05-21 19:10:13,513] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #170) - 2025-05-21 19:10:17,211] Adding jobs to database: jobs.db
+[ERROR. scrapers.upwork, (line #199) - 2025-05-21 19:10:17,212] SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 8264 and this is thread id 5768.
+[INFO. scrapers.upwork, (line #202) - 2025-05-21 19:10:17,212] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #75) - 2025-05-21 19:16:30,445] Launching driver
+[INFO. scrapers.upwork, (line #52) - 2025-05-21 19:16:30,447] Attempt #1/3
+[INFO. scrapers.upwork, (line #81) - 2025-05-21 19:16:36,083] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #83) - 2025-05-21 19:16:45,961] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 19:17:10,970] Switching to main window
+[INFO. scrapers.upwork, (line #90) - 2025-05-21 19:17:10,990] Submitting username
+[INFO. scrapers.upwork, (line #109) - 2025-05-21 19:17:11,325] Submitting password
+[INFO. scrapers.upwork, (line #128) - 2025-05-21 19:17:12,089] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #132) - 2025-05-21 19:17:22,101] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #137) - 2025-05-21 19:17:35,198] Scrolling down page
+[INFO. scrapers.upwork, (line #146) - 2025-05-21 19:18:00,713] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #170) - 2025-05-21 19:18:05,117] Adding jobs to database: jobs.db
+[ERROR. scrapers.upwork, (line #199) - 2025-05-21 19:18:05,118] SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 31064 and this is thread id 24760.
+[INFO. scrapers.upwork, (line #202) - 2025-05-21 19:18:05,119] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #75) - 2025-05-21 19:22:47,764] Launching driver
+[INFO. scrapers.upwork, (line #52) - 2025-05-21 19:22:47,767] Attempt #1/3
+[INFO. scrapers.upwork, (line #81) - 2025-05-21 19:22:52,712] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #83) - 2025-05-21 19:23:00,760] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 19:23:25,771] Switching to main window
+[INFO. scrapers.upwork, (line #90) - 2025-05-21 19:23:25,793] Submitting username
+[INFO. scrapers.upwork, (line #109) - 2025-05-21 19:23:26,154] Submitting password
+[INFO. scrapers.upwork, (line #128) - 2025-05-21 19:23:27,429] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #132) - 2025-05-21 19:23:37,444] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #137) - 2025-05-21 19:23:50,685] Scrolling down page
+[INFO. scrapers.upwork, (line #146) - 2025-05-21 19:24:15,612] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #170) - 2025-05-21 19:24:18,681] Adding jobs to database: jobs.db
+[ERROR. scrapers.upwork, (line #199) - 2025-05-21 19:24:18,682] SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 33648 and this is thread id 33112.
+[INFO. scrapers.upwork, (line #202) - 2025-05-21 19:24:18,682] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #75) - 2025-05-21 19:27:41,600] Launching driver
+[INFO. scrapers.upwork, (line #52) - 2025-05-21 19:27:41,602] Attempt #1/3
+[INFO. scrapers.upwork, (line #81) - 2025-05-21 19:27:47,487] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #83) - 2025-05-21 19:27:56,749] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 19:28:21,753] Switching to main window
+[INFO. scrapers.upwork, (line #90) - 2025-05-21 19:28:21,787] Submitting username
+[INFO. scrapers.upwork, (line #109) - 2025-05-21 19:28:22,125] Submitting password
+[INFO. scrapers.upwork, (line #128) - 2025-05-21 19:28:22,875] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #132) - 2025-05-21 19:28:32,878] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #137) - 2025-05-21 19:28:45,795] Scrolling down page
+[INFO. scrapers.upwork, (line #146) - 2025-05-21 19:29:10,962] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #170) - 2025-05-21 19:29:14,093] Adding jobs to database: jobs.db
+[INFO. scrapers.upwork, (line #190) - 2025-05-21 19:29:14,236] Added 30 jobs to the database
+[INFO. scrapers.upwork, (line #193) - 2025-05-21 19:29:14,238] Closing browser...
+[INFO. scrapers.upwork, (line #202) - 2025-05-21 19:29:14,928] Finished UpworkScraper
