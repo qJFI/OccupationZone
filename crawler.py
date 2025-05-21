@@ -7,6 +7,7 @@ from scrapers.wuzzuf import WuzzufScraper
 from scrapers.remoteok import RemoteOKScraper
 from scrapers.weworkremotely import WeWorkRemotelyScraper
 from scrapers.upwork import UpworkScraper
+from scrapers.peopleperhour import PeoplePerHourScraper
 import concurrent.futures
 from collections import defaultdict
 import pandas as pd
@@ -26,7 +27,7 @@ def run_scraper(scraper_class, query, db_name):
 # Main function to run scrapers
 def main():
     db_name = 'jobs.db'
-    query = 'android'
+    query = 'software'
 
     # Store initial job counts
     temp_storage = DataStorage(output_format='sqlite', db_name=db_name)
@@ -48,7 +49,8 @@ def main():
         WuzzufScraper,
         RemoteOKScraper,
         WeWorkRemotelyScraper,
-        UpworkScraper
+        UpworkScraper,
+        PeoplePerHourScraper
     ]
 
     # Run scrapers in parallel, each with its own DataStorage/connection

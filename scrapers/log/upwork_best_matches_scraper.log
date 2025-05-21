@@ -873,3 +873,51 @@ Stacktrace:
 [INFO. scrapers.upwork, (line #190) - 2025-05-21 19:29:14,236] Added 30 jobs to the database
 [INFO. scrapers.upwork, (line #193) - 2025-05-21 19:29:14,238] Closing browser...
 [INFO. scrapers.upwork, (line #202) - 2025-05-21 19:29:14,928] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #75) - 2025-05-21 19:57:44,313] Launching driver
+[INFO. scrapers.upwork, (line #52) - 2025-05-21 19:57:44,314] Attempt #1/3
+[INFO. scrapers.upwork, (line #81) - 2025-05-21 19:57:48,765] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #83) - 2025-05-21 19:57:59,236] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 19:58:24,295] Switching to main window
+[INFO. scrapers.upwork, (line #90) - 2025-05-21 19:58:24,322] Submitting username
+[INFO. scrapers.upwork, (line #109) - 2025-05-21 19:58:24,687] Submitting password
+[ERROR. scrapers.upwork, (line #199) - 2025-05-21 19:58:55,282] Message: 
+Stacktrace:
+	GetHandleVerifier [0x0088FC03+61635]
+	GetHandleVerifier [0x0088FC44+61700]
+	(No symbol) [0x006B05D3]
+	(No symbol) [0x006F899E]
+	(No symbol) [0x006F8D3B]
+	(No symbol) [0x00740E12]
+	(No symbol) [0x0071D2E4]
+	(No symbol) [0x0073E61B]
+	(No symbol) [0x0071D096]
+	(No symbol) [0x006EC840]
+	(No symbol) [0x006ED6A4]
+	GetHandleVerifier [0x00B14523+2701795]
+	GetHandleVerifier [0x00B0FCA6+2683238]
+	GetHandleVerifier [0x00B2A9EE+2793134]
+	GetHandleVerifier [0x008A68C5+155013]
+	GetHandleVerifier [0x008ACFAD+181357]
+	GetHandleVerifier [0x00897458+92440]
+	GetHandleVerifier [0x00897600+92864]
+	GetHandleVerifier [0x00881FF0+5296]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. scrapers.upwork, (line #202) - 2025-05-21 19:58:55,283] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #75) - 2025-05-21 20:29:16,593] Launching driver
+[INFO. scrapers.upwork, (line #52) - 2025-05-21 20:29:16,597] Attempt #1/3
+[INFO. scrapers.upwork, (line #81) - 2025-05-21 20:29:34,903] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #83) - 2025-05-21 20:29:43,207] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 20:30:08,230] Switching to main window
+[INFO. scrapers.upwork, (line #90) - 2025-05-21 20:30:08,354] Submitting username
+[INFO. scrapers.upwork, (line #109) - 2025-05-21 20:30:08,914] Submitting password
+[INFO. scrapers.upwork, (line #128) - 2025-05-21 20:30:09,695] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #132) - 2025-05-21 20:30:19,703] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #137) - 2025-05-21 20:30:32,954] Scrolling down page
+[INFO. scrapers.upwork, (line #146) - 2025-05-21 20:30:57,952] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #170) - 2025-05-21 20:31:02,121] Adding jobs to database: jobs.db
+[INFO. scrapers.upwork, (line #190) - 2025-05-21 20:31:02,259] Added 30 jobs to the database
+[INFO. scrapers.upwork, (line #193) - 2025-05-21 20:31:02,260] Closing browser...
+[INFO. scrapers.upwork, (line #202) - 2025-05-21 20:31:03,350] Finished UpworkScraper
