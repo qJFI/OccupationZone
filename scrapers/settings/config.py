@@ -1,0 +1,7 @@
+UPWORK_USER_NAME = "Youssef Khalaf"
+UPWORK_USERNAME = "ymkhhk20055@gmail.com"
+UPWORK_PASSWORD = "JustJFI@205"
+
+#Upwork scraper settings
+MAX_ATTEMPTS = 3
+VERIFICATION_PAUSE=10

@@ -1,0 +1,818 @@
+[INFO. __main__, (line #83) - 2025-05-21 02:57:12,434] Launching driver
+[INFO. __main__, (line #49) - 2025-05-21 02:57:12,435] Trying with Chrome version 90
+[INFO. __main__, (line #51) - 2025-05-21 02:57:12,435] Attempt #1/3
+[ERROR. __main__, (line #56) - 2025-05-21 02:57:17,798] Failed to launch Chrome driver with version 90. Retrying...
+[INFO. __main__, (line #49) - 2025-05-21 02:57:17,798] Trying with Chrome version 123
+[INFO. __main__, (line #51) - 2025-05-21 02:57:17,799] Attempt #1/3
+[ERROR. __main__, (line #56) - 2025-05-21 02:57:23,733] Failed to launch Chrome driver with version 123. Retrying...
+[INFO. __main__, (line #49) - 2025-05-21 02:57:23,735] Trying with Chrome version 90
+[INFO. __main__, (line #51) - 2025-05-21 02:57:23,736] Attempt #2/3
+[ERROR. __main__, (line #56) - 2025-05-21 02:57:26,677] Failed to launch Chrome driver with version 90. Retrying...
+[INFO. __main__, (line #49) - 2025-05-21 02:57:26,678] Trying with Chrome version 123
+[INFO. __main__, (line #51) - 2025-05-21 02:57:26,679] Attempt #2/3
+[ERROR. __main__, (line #56) - 2025-05-21 02:57:30,335] Failed to launch Chrome driver with version 123. Retrying...
+[INFO. __main__, (line #49) - 2025-05-21 02:57:30,335] Trying with Chrome version 90
+[INFO. __main__, (line #51) - 2025-05-21 02:57:30,336] Attempt #3/3
+[ERROR. __main__, (line #56) - 2025-05-21 02:57:33,339] Failed to launch Chrome driver with version 90. Retrying...
+[INFO. __main__, (line #49) - 2025-05-21 02:57:33,339] Trying with Chrome version 123
+[INFO. __main__, (line #51) - 2025-05-21 02:57:33,339] Attempt #3/3
+[ERROR. __main__, (line #56) - 2025-05-21 02:57:37,205] Failed to launch Chrome driver with version 123. Retrying...
+[ERROR. __main__, (line #57) - 2025-05-21 02:57:37,206] All attempts failed for all Chrome versions within 3 attempts. Unable to launch Chrome driver.
+[ERROR. __main__, (line #212) - 2025-05-21 02:57:37,206] Couldn't load driver
+[INFO. __main__, (line #219) - 2025-05-21 02:57:37,207] Closing connection to database
+[INFO. __main__, (line #87) - 2025-05-21 03:01:16,224] Launching driver
+[INFO. __main__, (line #49) - 2025-05-21 03:01:16,224] Trying with Chrome version 90
+[INFO. __main__, (line #51) - 2025-05-21 03:01:16,224] Attempt #1/3
+[ERROR. __main__, (line #59) - 2025-05-21 03:01:19,588] Failed to launch Chrome driver with version 90. Retrying...
+[ERROR. __main__, (line #60) - 2025-05-21 03:01:19,588] Error details: Message: unknown error: cannot connect to chrome at 127.0.0.1:64651
+from session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 136.0.7103.114
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0101C013+2474003]
+	Ordinal0 [0x00FB29C1+2042305]
+	Ordinal0 [0x00EC2F68+1060712]
+	Ordinal0 [0x00EE188E+1185934]
+	Ordinal0 [0x00EDABAB+1158059]
+	Ordinal0 [0x00EDA94E+1157454]
+	Ordinal0 [0x00F0A2A2+1352354]
+	Ordinal0 [0x00F08FAA+1347498]
+	Ordinal0 [0x00F066DB+1337051]
+	Ordinal0 [0x00EE3427+1192999]
+	Ordinal0 [0x00EE42EE+1196782]
+	Ordinal0 [0x00EE4279+1196665]
+	GetHandleVerifier [0x011A96FC+1590332]
+	GetHandleVerifier [0x01258614+2306900]
+	GetHandleVerifier [0x010A9E93+543699]
+	GetHandleVerifier [0x010A92CE+540686]
+	Ordinal0 [0x00FB86BA+2066106]
+	Ordinal0 [0x00FBD1C8+2085320]
+	Ordinal0 [0x00FBD308+2085640]
+	Ordinal0 [0x00FC67F3+2123763]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. __main__, (line #49) - 2025-05-21 03:01:19,589] Trying with Chrome version 123
+[INFO. __main__, (line #51) - 2025-05-21 03:01:19,589] Attempt #1/3
+[ERROR. __main__, (line #59) - 2025-05-21 03:01:57,957] Failed to launch Chrome driver with version 123. Retrying...
+[ERROR. __main__, (line #60) - 2025-05-21 03:01:57,958] Error details: Message: unknown error: cannot connect to chrome at 127.0.0.1:64680
+from session not created: This version of ChromeDriver only supports Chrome version 123
+Current browser version is 136.0.7103.114
+Stacktrace:
+	GetHandleVerifier [0x00CB4CA3+225091]
+	(No symbol) [0x00BE4DF1]
+	(No symbol) [0x00A89A7A]
+	(No symbol) [0x00AB53B1]
+	(No symbol) [0x00AB494B]
+	(No symbol) [0x00AAD005]
+	(No symbol) [0x00AACE47]
+	(No symbol) [0x00AE7C71]
+	(No symbol) [0x00AE790A]
+	(No symbol) [0x00ADF2F6]
+	(No symbol) [0x00AB79B9]
+	(No symbol) [0x00AB879D]
+	sqlite3_dbdata_init [0x01129A43+4064547]
+	sqlite3_dbdata_init [0x0113104A+4094762]
+	sqlite3_dbdata_init [0x0112B948+4072488]
+	sqlite3_dbdata_init [0x00E2C9A9+930953]
+	(No symbol) [0x00BF07C4]
+	(No symbol) [0x00BEACE8]
+	(No symbol) [0x00BEAE11]
+	(No symbol) [0x00BDCA80]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. __main__, (line #49) - 2025-05-21 03:01:57,958] Trying with Chrome version 90
+[INFO. __main__, (line #51) - 2025-05-21 03:01:57,959] Attempt #2/3
+[ERROR. __main__, (line #59) - 2025-05-21 03:02:00,936] Failed to launch Chrome driver with version 90. Retrying...
+[ERROR. __main__, (line #60) - 2025-05-21 03:02:00,936] Error details: Message: unknown error: cannot connect to chrome at 127.0.0.1:64689
+from session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 136.0.7103.114
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0061C013+2474003]
+	Ordinal0 [0x005B29C1+2042305]
+	Ordinal0 [0x004C2F68+1060712]
+	Ordinal0 [0x004E188E+1185934]
+	Ordinal0 [0x004DABAB+1158059]
+	Ordinal0 [0x004DA94E+1157454]
+	Ordinal0 [0x0050A2A2+1352354]
+	Ordinal0 [0x00508FAA+1347498]
+	Ordinal0 [0x005066DB+1337051]
+	Ordinal0 [0x004E3427+1192999]
+	Ordinal0 [0x004E42EE+1196782]
+	Ordinal0 [0x004E4279+1196665]
+	GetHandleVerifier [0x007A96FC+1590332]
+	GetHandleVerifier [0x00858614+2306900]
+	GetHandleVerifier [0x006A9E93+543699]
+	GetHandleVerifier [0x006A92CE+540686]
+	Ordinal0 [0x005B86BA+2066106]
+	Ordinal0 [0x005BD1C8+2085320]
+	Ordinal0 [0x005BD308+2085640]
+	Ordinal0 [0x005C67F3+2123763]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. __main__, (line #49) - 2025-05-21 03:02:00,938] Trying with Chrome version 123
+[INFO. __main__, (line #51) - 2025-05-21 03:02:00,939] Attempt #2/3
+[ERROR. __main__, (line #59) - 2025-05-21 03:02:04,947] Failed to launch Chrome driver with version 123. Retrying...
+[ERROR. __main__, (line #60) - 2025-05-21 03:02:04,949] Error details: Message: unknown error: cannot connect to chrome at 127.0.0.1:64697
+from session not created: This version of ChromeDriver only supports Chrome version 123
+Current browser version is 136.0.7103.114
+Stacktrace:
+	GetHandleVerifier [0x00C24CA3+225091]
+	(No symbol) [0x00B54DF1]
+	(No symbol) [0x009F9A7A]
+	(No symbol) [0x00A253B1]
+	(No symbol) [0x00A2494B]
+	(No symbol) [0x00A1D005]
+	(No symbol) [0x00A1CE47]
+	(No symbol) [0x00A57C71]
+	(No symbol) [0x00A5790A]
+	(No symbol) [0x00A4F2F6]
+	(No symbol) [0x00A279B9]
+	(No symbol) [0x00A2879D]
+	sqlite3_dbdata_init [0x01099A43+4064547]
+	sqlite3_dbdata_init [0x010A104A+4094762]
+	sqlite3_dbdata_init [0x0109B948+4072488]
+	sqlite3_dbdata_init [0x00D9C9A9+930953]
+	(No symbol) [0x00B607C4]
+	(No symbol) [0x00B5ACE8]
+	(No symbol) [0x00B5AE11]
+	(No symbol) [0x00B4CA80]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. __main__, (line #49) - 2025-05-21 03:02:04,949] Trying with Chrome version 90
+[INFO. __main__, (line #51) - 2025-05-21 03:02:04,950] Attempt #3/3
+[ERROR. __main__, (line #59) - 2025-05-21 03:02:07,953] Failed to launch Chrome driver with version 90. Retrying...
+[ERROR. __main__, (line #60) - 2025-05-21 03:02:07,954] Error details: Message: unknown error: cannot connect to chrome at 127.0.0.1:64705
+from session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 136.0.7103.114
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009AC013+2474003]
+	Ordinal0 [0x009429C1+2042305]
+	Ordinal0 [0x00852F68+1060712]
+	Ordinal0 [0x0087188E+1185934]
+	Ordinal0 [0x0086ABAB+1158059]
+	Ordinal0 [0x0086A94E+1157454]
+	Ordinal0 [0x0089A2A2+1352354]
+	Ordinal0 [0x00898FAA+1347498]
+	Ordinal0 [0x008966DB+1337051]
+	Ordinal0 [0x00873427+1192999]
+	Ordinal0 [0x008742EE+1196782]
+	Ordinal0 [0x00874279+1196665]
+	GetHandleVerifier [0x00B396FC+1590332]
+	GetHandleVerifier [0x00BE8614+2306900]
+	GetHandleVerifier [0x00A39E93+543699]
+	GetHandleVerifier [0x00A392CE+540686]
+	Ordinal0 [0x009486BA+2066106]
+	Ordinal0 [0x0094D1C8+2085320]
+	Ordinal0 [0x0094D308+2085640]
+	Ordinal0 [0x009567F3+2123763]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. __main__, (line #49) - 2025-05-21 03:02:07,955] Trying with Chrome version 123
+[INFO. __main__, (line #51) - 2025-05-21 03:02:07,955] Attempt #3/3
+[ERROR. __main__, (line #59) - 2025-05-21 03:02:11,806] Failed to launch Chrome driver with version 123. Retrying...
+[ERROR. __main__, (line #60) - 2025-05-21 03:02:11,807] Error details: Message: unknown error: cannot connect to chrome at 127.0.0.1:64716
+from session not created: This version of ChromeDriver only supports Chrome version 123
+Current browser version is 136.0.7103.114
+Stacktrace:
+	GetHandleVerifier [0x00B64CA3+225091]
+	(No symbol) [0x00A94DF1]
+	(No symbol) [0x00939A7A]
+	(No symbol) [0x009653B1]
+	(No symbol) [0x0096494B]
+	(No symbol) [0x0095D005]
+	(No symbol) [0x0095CE47]
+	(No symbol) [0x00997C71]
+	(No symbol) [0x0099790A]
+	(No symbol) [0x0098F2F6]
+	(No symbol) [0x009679B9]
+	(No symbol) [0x0096879D]
+	sqlite3_dbdata_init [0x00FD9A43+4064547]
+	sqlite3_dbdata_init [0x00FE104A+4094762]
+	sqlite3_dbdata_init [0x00FDB948+4072488]
+	sqlite3_dbdata_init [0x00CDC9A9+930953]
+	(No symbol) [0x00AA07C4]
+	(No symbol) [0x00A9ACE8]
+	(No symbol) [0x00A9AE11]
+	(No symbol) [0x00A8CA80]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[ERROR. __main__, (line #61) - 2025-05-21 03:02:11,808] All attempts failed for all Chrome versions within 3 attempts. Unable to launch Chrome driver.
+[ERROR. __main__, (line #62) - 2025-05-21 03:02:11,808] Make sure Google Chrome is installed and up to date. If Chrome is installed in a non-standard location, specify the path in the config as CHROME_PATH.
+[ERROR. __main__, (line #217) - 2025-05-21 03:02:11,809] Couldn't load driver
+[INFO. __main__, (line #224) - 2025-05-21 03:02:11,809] Closing connection to database
+[INFO. __main__, (line #87) - 2025-05-21 03:06:15,067] Launching driver
+[ERROR. __main__, (line #220) - 2025-05-21 03:06:15,067] module 'settings.config' has no attribute 'CHROME_VERSIONS'
+[INFO. __main__, (line #224) - 2025-05-21 03:06:15,067] Closing connection to database
+[INFO. __main__, (line #85) - 2025-05-21 03:08:29,886] Launching driver
+[INFO. __main__, (line #49) - 2025-05-21 03:08:29,887] Attempt #1/3
+[INFO. __main__, (line #92) - 2025-05-21 03:08:34,047] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. __main__, (line #94) - 2025-05-21 03:08:41,980] Pausing for windows to fully load
+[INFO. __main__, (line #97) - 2025-05-21 03:09:06,982] Switching to main window
+[INFO. __main__, (line #101) - 2025-05-21 03:09:07,111] Submitting username
+[INFO. __main__, (line #120) - 2025-05-21 03:09:07,638] Submitting password
+[ERROR. __main__, (line #218) - 2025-05-21 03:09:08,428] module 'settings.config' has no attribute 'VERIFICATION_PAUSE'
+[INFO. __main__, (line #222) - 2025-05-21 03:09:08,428] Closing connection to database
+[INFO. __main__, (line #85) - 2025-05-21 03:09:24,403] Launching driver
+[INFO. __main__, (line #49) - 2025-05-21 03:09:24,404] Attempt #1/3
+[INFO. __main__, (line #92) - 2025-05-21 03:09:28,371] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. __main__, (line #94) - 2025-05-21 03:09:35,385] Pausing for windows to fully load
+[INFO. __main__, (line #97) - 2025-05-21 03:10:00,388] Switching to main window
+[INFO. __main__, (line #101) - 2025-05-21 03:10:00,469] Submitting username
+[INFO. __main__, (line #120) - 2025-05-21 03:10:00,798] Submitting password
+[ERROR. __main__, (line #218) - 2025-05-21 03:10:01,557] module 'settings.config' has no attribute 'VERIFICATION_PAUSE'
+[INFO. __main__, (line #222) - 2025-05-21 03:10:01,558] Closing connection to database
+[INFO. __main__, (line #85) - 2025-05-21 03:10:54,361] Launching driver
+[INFO. __main__, (line #49) - 2025-05-21 03:10:54,361] Attempt #1/3
+[INFO. __main__, (line #92) - 2025-05-21 03:10:58,166] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. __main__, (line #94) - 2025-05-21 03:11:05,551] Pausing for windows to fully load
+[INFO. __main__, (line #97) - 2025-05-21 03:11:30,559] Switching to main window
+[INFO. __main__, (line #101) - 2025-05-21 03:11:30,584] Submitting username
+[INFO. __main__, (line #120) - 2025-05-21 03:11:30,925] Submitting password
+[INFO. __main__, (line #141) - 2025-05-21 03:11:31,705] Pausing for 10 seconds for credentials verification
+[INFO. __main__, (line #145) - 2025-05-21 03:11:41,713] Redirecting to Best Matches
+[INFO. __main__, (line #150) - 2025-05-21 03:11:55,582] Scrolling down page
+[INFO. __main__, (line #159) - 2025-05-21 03:12:20,629] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,017] Storing `App Testing` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,022] Storing `Arabic Audio Recordings Check` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,026] Storing `AI Developer Needed for Quran Recitation Voice Correction App` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,030] Storing `Stereoscopic Imaging processing in python` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,035] Storing `Computer Vision Consultant – Fix Barrier Distance Estimation (1-Week Project)` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,040] Storing `Model Training for Number Detection on Bibs and Placards` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,044] Storing `AI Developer` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,049] Storing `Machine Learning Model for ASL Gesture Recognition` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,053] Storing `Need computer vision object detection mobilenet ssd v2 training and quantization pipeline` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,058] Storing `Simple AI Image generation` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,063] Storing `Brain Tumor Detection Project Using YOLOv2 and Medical SAM in MATLAB with GUI and Full Documentation` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,067] Storing `Computer Vision/ML Expert for Video-Based Ergonomic Risk Assessment Tool` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,072] Storing `AI Engineer for Biomedical Data Processing` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,077] Storing `Simple Flutter App Development` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,081] Storing `AI Agent Development for Daily Tasks` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,085] Storing `AI Project: ECG QRS Detection Algorithm based on CNN with Feature Enrichment` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,090] Storing `Fitting Stones into specific shapes (ai or manual placement)` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,094] Storing `AI Developer Needed for Video Clip Naming System` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,098] Storing `Calendar Web App` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,104] Storing `LSTM Model Creation Tutorial` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,108] Storing `Urgent: Build a One-Click Text Summarizer` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,112] Storing `Junior Developer Job Finding` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,117] Storing `Lovable AI developer needed` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,121] Storing `AI Developer Needed for Boxing Video Analysis MVP (Pose Detection + Combo Stats` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,125] Storing `AI Guru Stable Job` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,129] Storing `Virtual AI Assistant Project - Arabic Female Character Development` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,133] Storing `AI Coding Tool Screen Recording Developer` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,138] Storing `Machine Learning & Deep Learning Engineer for AI Feature Development` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,143] Storing `ViT Model Machine Learning Re-load existing notebook` job in database
+[INFO. __main__, (line #202) - 2025-05-21 03:12:24,147] Storing `Publishers Wanted for an Upcoming Android Game Release` job in database
+[INFO. __main__, (line #211) - 2025-05-21 03:12:24,151] Closing browser...
+[INFO. __main__, (line #222) - 2025-05-21 03:12:24,705] Closing connection to database
+[INFO. __main__, (line #87) - 2025-05-21 03:49:56,757] Launching driver
+[INFO. __main__, (line #51) - 2025-05-21 03:49:56,759] Attempt #1/3
+[INFO. __main__, (line #224) - 2025-05-21 03:50:01,846] Closing connection to database
+[INFO. __main__, (line #85) - 2025-05-21 04:00:00,983] Launching driver
+[INFO. __main__, (line #49) - 2025-05-21 04:00:00,984] Attempt #1/3
+[INFO. __main__, (line #92) - 2025-05-21 04:00:05,563] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. __main__, (line #94) - 2025-05-21 04:00:22,153] Pausing for windows to fully load
+[INFO. __main__, (line #97) - 2025-05-21 04:00:47,155] Switching to main window
+[INFO. __main__, (line #101) - 2025-05-21 04:00:47,177] Submitting username
+[INFO. __main__, (line #120) - 2025-05-21 04:00:47,553] Submitting password
+[INFO. __main__, (line #141) - 2025-05-21 04:00:48,287] Pausing for 10 seconds for credentials verification
+[INFO. __main__, (line #145) - 2025-05-21 04:00:58,296] Redirecting to Best Matches
+[INFO. __main__, (line #150) - 2025-05-21 04:01:12,149] Scrolling down page
+[ERROR. __main__, (line #217) - 2025-05-21 04:01:31,490] Message: stale element reference: stale element not found
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0034FC83+61635]
+	GetHandleVerifier [0x0034FCC4+61700]
+	(No symbol) [0x001705D3]
+	(No symbol) [0x00182061]
+	(No symbol) [0x00181140]
+	(No symbol) [0x00177880]
+	(No symbol) [0x00175D81]
+	(No symbol) [0x001790CA]
+	(No symbol) [0x00179147]
+	(No symbol) [0x001B963A]
+	(No symbol) [0x001B96C1]
+	(No symbol) [0x001B10F4]
+	(No symbol) [0x001DD29C]
+	(No symbol) [0x001AE034]
+	(No symbol) [0x001DD514]
+	(No symbol) [0x001FE61B]
+	(No symbol) [0x001DD096]
+	(No symbol) [0x001AC840]
+	(No symbol) [0x001AD6A4]
+	GetHandleVerifier [0x005D45A3+2701795]
+	GetHandleVerifier [0x005CFD26+2683238]
+	GetHandleVerifier [0x005EAA6E+2793134]
+	GetHandleVerifier [0x00366945+155013]
+	GetHandleVerifier [0x0036D02D+181357]
+	GetHandleVerifier [0x003574D8+92440]
+	GetHandleVerifier [0x00357680+92864]
+	GetHandleVerifier [0x00342070+5296]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+	(No symbol) [0x00000000]
+
+[INFO. __main__, (line #221) - 2025-05-21 04:01:31,491] Closing connection to database
+[INFO. __main__, (line #85) - 2025-05-21 04:01:39,988] Launching driver
+[INFO. __main__, (line #49) - 2025-05-21 04:01:39,988] Attempt #1/3
+[INFO. __main__, (line #92) - 2025-05-21 04:01:43,827] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. __main__, (line #94) - 2025-05-21 04:01:51,181] Pausing for windows to fully load
+[INFO. __main__, (line #97) - 2025-05-21 04:02:16,184] Switching to main window
+[INFO. __main__, (line #101) - 2025-05-21 04:02:16,220] Submitting username
+[INFO. __main__, (line #120) - 2025-05-21 04:02:16,570] Submitting password
+[INFO. __main__, (line #141) - 2025-05-21 04:02:17,339] Pausing for 10 seconds for credentials verification
+[INFO. __main__, (line #145) - 2025-05-21 04:02:27,353] Redirecting to Best Matches
+[INFO. __main__, (line #150) - 2025-05-21 04:02:41,255] Scrolling down page
+[INFO. __main__, (line #159) - 2025-05-21 04:03:06,162] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,129]     Job ID #2893d8bffeb2cb5219f81fd9313aa570 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,136]     Job ID #3f395a1ff5785c911aa0aa3326625e09 already exists. Updating job proposals...
+[INFO. __main__, (line #202) - 2025-05-21 04:03:09,140] Storing `USD 40 -- Register a URL of 'Contemporary-Web-Design.com'` job in database
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,146]     Job ID #9812dbe6a7d2a3c0d9b0436cbdbb28bc already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,150]     Job ID #7de9987cc4164fb7fb1383c9fdd50d2b already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,155]     Job ID #9c71299a29a0d176ea32b43f1ea9ef36 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,161]     Job ID #951883ccea71303ed193f8b0dc03603a already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,167]     Job ID #b737bbb180423f3ddeafcd7fed7f3995 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,173]     Job ID #2f52bdccf3b192e6b8c355ecaafd04bf already exists. Updating job proposals...
+[INFO. __main__, (line #202) - 2025-05-21 04:03:09,177] Storing `App Publishing Experts Needed for Mobile Game Launch` job in database
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,183]     Job ID #357468b1dc7a3dc812325fa0161ce3e9 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,188]     Job ID #b4f9548a49f325419ea46f05d74d79ef already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,193]     Job ID #3f2449cad65b56960d4a5018bf45f96e already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,198]     Job ID #efd2899cb29b9cdf0b7bb3eb2ef0e1b6 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,205]     Job ID #4ea69cba3d39b6b7b5a54f573747fd37 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,210]     Job ID #bca3a77d6dfd1634bf2a545b3eec6a63 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,217]     Job ID #111fd85bdd8eaffccddc7b2d845a2d13 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,222]     Job ID #c795382e7e49676a758eb7b8da0bc599 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,227]     Job ID #37418fa95d4d79bd1beac5371f1fa0ca already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,233]     Job ID #81870376da709556cdda607036552940 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,238]     Job ID #6daa13308183f00a8124fdaea22073d2 already exists. Updating job proposals...
+[INFO. __main__, (line #202) - 2025-05-21 04:03:09,243] Storing `C++/Qt Developer for Laser Hardware Project` job in database
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,247]     Job ID #61f40ec6c31bafc86f71ccbf57e4461a already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,252]     Job ID #b6d9b5b2713b2af6a244d5d5a8b25887 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,256]     Job ID #986cbbff0a4f67169befac210fcffeeb already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,261]     Job ID #b3636aec9718cef15ad9b021f1c53893 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,267]     Job ID #b833b56b61f1988937759d8861533e3f already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,271]     Job ID #2447515c8b77a89ccc56590af2c8d5c9 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:03:09,276]     Job ID #545c1251c7271f2f17a19aac7a1c26e1 already exists. Updating job proposals...
+[INFO. __main__, (line #202) - 2025-05-21 04:03:09,281] Storing `AI Project Development and Implementation` job in database
+[INFO. __main__, (line #211) - 2025-05-21 04:03:09,284] Closing browser...
+[INFO. __main__, (line #221) - 2025-05-21 04:03:09,941] Closing connection to database
+[INFO. __main__, (line #85) - 2025-05-21 04:37:50,518] Launching driver
+[INFO. __main__, (line #49) - 2025-05-21 04:37:50,519] Attempt #1/3
+[INFO. __main__, (line #92) - 2025-05-21 04:37:54,473] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. __main__, (line #94) - 2025-05-21 04:38:01,917] Pausing for windows to fully load
+[INFO. __main__, (line #97) - 2025-05-21 04:38:26,921] Switching to main window
+[INFO. __main__, (line #101) - 2025-05-21 04:38:26,976] Submitting username
+[INFO. __main__, (line #120) - 2025-05-21 04:38:27,328] Submitting password
+[INFO. __main__, (line #141) - 2025-05-21 04:38:28,083] Pausing for 10 seconds for credentials verification
+[INFO. __main__, (line #145) - 2025-05-21 04:38:38,086] Redirecting to Best Matches
+[INFO. __main__, (line #150) - 2025-05-21 04:38:52,018] Scrolling down page
+[INFO. __main__, (line #159) - 2025-05-21 04:39:17,169] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,358]     Job ID #2893d8bffeb2cb5219f81fd9313aa570 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,363]     Job ID #3f395a1ff5785c911aa0aa3326625e09 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,369]     Job ID #9812dbe6a7d2a3c0d9b0436cbdbb28bc already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,374]     Job ID #9c71299a29a0d176ea32b43f1ea9ef36 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,380]     Job ID #7de9987cc4164fb7fb1383c9fdd50d2b already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,385]     Job ID #951883ccea71303ed193f8b0dc03603a already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,391]     Job ID #58b2b6255192491ee667849c56879f18 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,396]     Job ID #b737bbb180423f3ddeafcd7fed7f3995 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,402]     Job ID #2f52bdccf3b192e6b8c355ecaafd04bf already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,406]     Job ID #357468b1dc7a3dc812325fa0161ce3e9 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,412]     Job ID #b4f9548a49f325419ea46f05d74d79ef already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,416]     Job ID #3f2449cad65b56960d4a5018bf45f96e already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,421]     Job ID #efd2899cb29b9cdf0b7bb3eb2ef0e1b6 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,426]     Job ID #4ea69cba3d39b6b7b5a54f573747fd37 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,431]     Job ID #bca3a77d6dfd1634bf2a545b3eec6a63 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,436]     Job ID #111fd85bdd8eaffccddc7b2d845a2d13 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,441]     Job ID #c795382e7e49676a758eb7b8da0bc599 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,445]     Job ID #37418fa95d4d79bd1beac5371f1fa0ca already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,450]     Job ID #6daa13308183f00a8124fdaea22073d2 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,455]     Job ID #81870376da709556cdda607036552940 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,460]     Job ID #986cbbff0a4f67169befac210fcffeeb already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,465]     Job ID #61f40ec6c31bafc86f71ccbf57e4461a already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,470]     Job ID #b3636aec9718cef15ad9b021f1c53893 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,475]     Job ID #b6d9b5b2713b2af6a244d5d5a8b25887 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,480]     Job ID #5d9b1c04cab39e38f6d03e93bb5a4e8d already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,485]     Job ID #2447515c8b77a89ccc56590af2c8d5c9 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,491]     Job ID #bece5797dbf304b93d5935b81bd4f52b already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,495]     Job ID #545c1251c7271f2f17a19aac7a1c26e1 already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,500]     Job ID #ff263b2e2ce56df675cdaec427b03c4d already exists. Updating job proposals...
+[INFO. __main__, (line #191) - 2025-05-21 04:39:22,505]     Job ID #b833b56b61f1988937759d8861533e3f already exists. Updating job proposals...
+[INFO. __main__, (line #211) - 2025-05-21 04:39:22,510] Closing browser...
+[INFO. __main__, (line #221) - 2025-05-21 04:39:23,188] Closing connection to database
+[INFO. __main__, (line #87) - 2025-05-21 05:11:10,706] Launching driver
+[INFO. __main__, (line #51) - 2025-05-21 05:11:10,706] Attempt #1/3
+[INFO. __main__, (line #94) - 2025-05-21 05:11:14,890] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. __main__, (line #96) - 2025-05-21 05:11:21,698] Pausing for windows to fully load
+[INFO. __main__, (line #99) - 2025-05-21 05:11:46,702] Switching to main window
+[INFO. __main__, (line #103) - 2025-05-21 05:11:46,750] Submitting username
+[INFO. __main__, (line #122) - 2025-05-21 05:11:47,115] Submitting password
+[INFO. __main__, (line #143) - 2025-05-21 05:11:47,881] Pausing for 10 seconds for credentials verification
+[INFO. __main__, (line #147) - 2025-05-21 05:11:57,884] Redirecting to Best Matches
+[INFO. __main__, (line #152) - 2025-05-21 05:12:11,369] Scrolling down page
+[INFO. __main__, (line #161) - 2025-05-21 05:12:36,225] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,535]     Job ID #2893d8bffeb2cb5219f81fd9313aa570 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,541]     Job ID #3f395a1ff5785c911aa0aa3326625e09 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,546]     Job ID #58b2b6255192491ee667849c56879f18 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,551]     Job ID #9812dbe6a7d2a3c0d9b0436cbdbb28bc already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,555]     Job ID #9c71299a29a0d176ea32b43f1ea9ef36 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,560]     Job ID #951883ccea71303ed193f8b0dc03603a already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,565]     Job ID #7de9987cc4164fb7fb1383c9fdd50d2b already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,569]     Job ID #b737bbb180423f3ddeafcd7fed7f3995 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,575]     Job ID #357468b1dc7a3dc812325fa0161ce3e9 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,580]     Job ID #b4f9548a49f325419ea46f05d74d79ef already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,584]     Job ID #3f2449cad65b56960d4a5018bf45f96e already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,589]     Job ID #efd2899cb29b9cdf0b7bb3eb2ef0e1b6 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,594]     Job ID #bca3a77d6dfd1634bf2a545b3eec6a63 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,598]     Job ID #4ea69cba3d39b6b7b5a54f573747fd37 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,603]     Job ID #111fd85bdd8eaffccddc7b2d845a2d13 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,609]     Job ID #c795382e7e49676a758eb7b8da0bc599 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,614]     Job ID #37418fa95d4d79bd1beac5371f1fa0ca already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,618]     Job ID #6daa13308183f00a8124fdaea22073d2 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,623]     Job ID #81870376da709556cdda607036552940 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,629]     Job ID #986cbbff0a4f67169befac210fcffeeb already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,634]     Job ID #61f40ec6c31bafc86f71ccbf57e4461a already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,638]     Job ID #b3636aec9718cef15ad9b021f1c53893 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,643]     Job ID #b6d9b5b2713b2af6a244d5d5a8b25887 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,647]     Job ID #2447515c8b77a89ccc56590af2c8d5c9 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,652]     Job ID #5d9b1c04cab39e38f6d03e93bb5a4e8d already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,656]     Job ID #bece5797dbf304b93d5935b81bd4f52b already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,660]     Job ID #ff263b2e2ce56df675cdaec427b03c4d already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,666]     Job ID #545c1251c7271f2f17a19aac7a1c26e1 already exists. Updating job proposals...
+[INFO. __main__, (line #193) - 2025-05-21 05:12:39,671]     Job ID #b833b56b61f1988937759d8861533e3f already exists. Updating job proposals...
+[INFO. __main__, (line #204) - 2025-05-21 05:12:39,675] Storing `CUDA Developer Needed to Complete MLP Neural Network Implementation` job in database
+[INFO. __main__, (line #213) - 2025-05-21 05:12:39,680] Closing browser...
+[INFO. __main__, (line #223) - 2025-05-21 05:12:40,351] Closing connection to database
+[INFO. __main__, (line #87) - 2025-05-21 05:19:32,546] Launching driver
+[INFO. __main__, (line #51) - 2025-05-21 05:19:32,546] Attempt #1/3
+[INFO. __main__, (line #94) - 2025-05-21 05:19:36,568] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. __main__, (line #96) - 2025-05-21 05:19:38,209] Pausing for windows to fully load
+[INFO. __main__, (line #99) - 2025-05-21 05:20:03,210] Switching to main window
+[ERROR. __main__, (line #219) - 2025-05-21 05:20:03,215] Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x0106FC83+61635]
+	GetHandleVerifier [0x0106FCC4+61700]
+	(No symbol) [0x00E905D3]
+	(No symbol) [0x00E7E9D8]
+	(No symbol) [0x00E7F93D]
+	(No symbol) [0x00E90FE3]
+	(No symbol) [0x00E6F715]
+	(No symbol) [0x00F0C5E8]
+	(No symbol) [0x00EFD263]
+	(No symbol) [0x00ECC840]
+	(No symbol) [0x00ECD6A4]
+	GetHandleVerifier [0x012F45A3+2701795]
+	GetHandleVerifier [0x012EFD26+2683238]
+	GetHandleVerifier [0x0130AA6E+2793134]
+	GetHandleVerifier [0x01086945+155013]
+	GetHandleVerifier [0x0108D02D+181357]
+	GetHandleVerifier [0x010774D8+92440]
+	GetHandleVerifier [0x01077680+92864]
+	GetHandleVerifier [0x01062070+5296]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. __main__, (line #223) - 2025-05-21 05:20:03,217] Closing connection to database
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 05:29:51,632] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 05:29:51,633] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 05:29:56,482] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 05:30:03,577] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 05:30:28,584] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 05:30:28,606] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 05:30:28,930] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 05:30:29,703] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 05:30:39,719] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 05:30:53,414] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 05:31:18,670] Waiting for element to load (max timeout set to 300 seconds)...
+[ERROR. scrapers.upwork, (line #190) - 2025-05-21 05:31:22,538] 'DataStorage' object has no attribute 'create_job_from_details'
+[INFO. scrapers.upwork, (line #193) - 2025-05-21 05:31:22,538] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 05:35:01,121] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 05:35:01,122] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 05:35:04,974] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 05:35:14,213] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 05:35:39,220] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 05:35:39,240] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 05:35:39,498] Submitting password
+[ERROR. scrapers.upwork, (line #190) - 2025-05-21 05:36:09,567] Message: 
+Stacktrace:
+	GetHandleVerifier [0x00D5FC83+61635]
+	GetHandleVerifier [0x00D5FCC4+61700]
+	(No symbol) [0x00B805D3]
+	(No symbol) [0x00BC899E]
+	(No symbol) [0x00BC8D3B]
+	(No symbol) [0x00C10E12]
+	(No symbol) [0x00BED2E4]
+	(No symbol) [0x00C0E61B]
+	(No symbol) [0x00BED096]
+	(No symbol) [0x00BBC840]
+	(No symbol) [0x00BBD6A4]
+	GetHandleVerifier [0x00FE45A3+2701795]
+	GetHandleVerifier [0x00FDFD26+2683238]
+	GetHandleVerifier [0x00FFAA6E+2793134]
+	GetHandleVerifier [0x00D76945+155013]
+	GetHandleVerifier [0x00D7D02D+181357]
+	GetHandleVerifier [0x00D674D8+92440]
+	GetHandleVerifier [0x00D67680+92864]
+	GetHandleVerifier [0x00D52070+5296]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. scrapers.upwork, (line #193) - 2025-05-21 05:36:09,568] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 05:36:24,385] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 05:36:24,386] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 05:36:28,762] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 05:36:37,265] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 05:37:02,280] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 05:37:02,315] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 05:37:02,658] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 05:37:03,438] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 05:37:13,447] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 05:37:26,744] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 05:37:51,552] Waiting for element to load (max timeout set to 300 seconds)...
+[ERROR. scrapers.upwork, (line #190) - 2025-05-21 05:37:54,647] 'DataStorage' object has no attribute 'create_job_from_details'
+[INFO. scrapers.upwork, (line #193) - 2025-05-21 05:37:54,647] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 05:54:09,796] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 05:54:09,798] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 05:54:14,288] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 05:54:21,554] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 05:54:46,571] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 05:54:46,588] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 05:54:46,929] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 05:54:47,705] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 05:54:57,714] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 05:55:11,430] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 05:55:36,745] Waiting for element to load (max timeout set to 300 seconds)...
+[ERROR. scrapers.upwork, (line #190) - 2025-05-21 05:55:41,195] 'DataStorage' object has no attribute 'create_job_from_details'
+[INFO. scrapers.upwork, (line #193) - 2025-05-21 05:55:41,196] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 06:02:32,176] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 06:02:32,177] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 06:02:36,292] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 06:02:43,972] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 06:03:08,984] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 06:03:09,033] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 06:03:09,412] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 06:03:10,229] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 06:03:20,245] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 06:03:33,515] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 06:03:58,793] Waiting for element to load (max timeout set to 300 seconds)...
+[ERROR. scrapers.upwork, (line #206) - 2025-05-21 06:04:03,600] 'DataStorage' object has no attribute 'create_job_from_details'
+[INFO. scrapers.upwork, (line #209) - 2025-05-21 06:04:03,601] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 06:10:04,595] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 06:10:04,596] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 06:10:08,536] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 06:10:15,508] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 06:10:40,511] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 06:10:40,559] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 06:10:40,904] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 06:10:41,685] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 06:10:51,695] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 06:11:05,466] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 06:11:30,466] Waiting for element to load (max timeout set to 300 seconds)...
+[ERROR. scrapers.upwork, (line #202) - 2025-05-21 06:11:33,769] table jobs has no column named job_id
+[INFO. scrapers.upwork, (line #205) - 2025-05-21 06:11:33,770] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 06:16:12,193] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 06:16:12,194] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 06:16:16,245] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 06:16:23,298] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 06:16:48,300] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 06:16:48,332] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 06:16:48,657] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 06:16:49,451] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 06:16:59,465] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 06:17:12,579] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 06:17:37,538] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #174) - 2025-05-21 06:17:40,591] Database file absolute path: c:\Semester 6\IR\Projects\jobs.db
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:17:40,592] Inserting job: job_id=2893d8bffeb2cb5219f81fd9313aa570, job_url=https://www.upwork.com/jobs/App-Testing_~021924914448956563684, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 17, 40, 592698), 'job_title': 'App Testing', 'job_description': 'I want to test my app. Looking for real testers. Atleast 20 people I want.', 'job_proposals': '50+', 'job_tags': '["Mobile App Testing", "Bug Reports", "Android"]', 'job_id': '2893d8bffeb2cb5219f81fd9313aa570'}
+[ERROR. scrapers.upwork, (line #204) - 2025-05-21 06:17:40,593] table jobs has no column named job_id
+[INFO. scrapers.upwork, (line #207) - 2025-05-21 06:17:40,594] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 06:20:27,204] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 06:20:27,204] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 06:20:31,396] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 06:20:38,397] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 06:21:03,409] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 06:21:03,415] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 06:21:03,781] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 06:21:04,537] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 06:21:14,540] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 06:21:27,842] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 06:21:53,155] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #174) - 2025-05-21 06:21:57,465] Database file absolute path: c:\Semester 6\IR\Projects\jobs.db
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:21:57,466] Inserting job: job_id=3f395a1ff5785c911aa0aa3326625e09, job_url=https://www.upwork.com/jobs/Arabic-Audio-Recordings-Check_~021924692976907138128, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 21, 57, 466181), 'job_title': 'Arabic Audio Recordings Check', 'job_description': 'Hello, I have 400 Arabic audio recordings, each recording is about 30 to 45 mins long. I am willing to hire 4 Arabic speaking freelancers who can understand Saudi Arabia Arabic language accent. The task is simple: 1. You have to listen the audio recording very properly and clearly and simultaneously check the data filled in excel file. 2. You have to verify excel file data with audio recording conversation and have to confirm if their is any mismatch or not. 3. You have to complete this task by 4th June 2025. 4. Daily \'x\' number of audio recordings with excel data file (Google Sheet) will be provided. And daily task allotted is to be completed on the same day as per Indian Standard Time. 5. The work will be totally online on Google Sheet (Excel File) and Google Drive. You won\'t be able to download any files on your computer. If you are applying mention "OLIVER IS GREEN" at the start of your application. Thank you!', 'job_proposals': '50+', 'job_tags': '["Microsoft Excel", "Arabic", "English", "General Transcription", "Translation"]', 'job_id': '3f395a1ff5785c911aa0aa3326625e09'}
+[ERROR. scrapers.upwork, (line #204) - 2025-05-21 06:21:57,467] table jobs has no column named job_id
+[INFO. scrapers.upwork, (line #207) - 2025-05-21 06:21:57,467] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 06:26:15,033] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 06:26:15,034] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 06:26:18,989] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 06:26:25,384] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 06:26:50,386] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 06:26:50,419] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 06:26:50,754] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 06:26:51,541] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 06:27:01,551] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 06:27:14,783] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 06:27:39,626] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #174) - 2025-05-21 06:27:42,781] Database file absolute path: c:\Semester 6\IR\Projects\jobs.db
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,781] Inserting job: job_id=3f395a1ff5785c911aa0aa3326625e09, job_url=https://www.upwork.com/jobs/Arabic-Audio-Recordings-Check_~021924692976907138128, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 781716), 'job_title': 'Arabic Audio Recordings Check', 'job_description': 'Hello, I have 400 Arabic audio recordings, each recording is about 30 to 45 mins long. I am willing to hire 4 Arabic speaking freelancers who can understand Saudi Arabia Arabic language accent. The task is simple: 1. You have to listen the audio recording very properly and clearly and simultaneously check the data filled in excel file. 2. You have to verify excel file data with audio recording conversation and have to confirm if their is any mismatch or not. 3. You have to complete this task by 4th June 2025. 4. Daily \'x\' number of audio recordings with excel data file (Google Sheet) will be provided. And daily task allotted is to be completed on the same day as per Indian Standard Time. 5. The work will be totally online on Google Sheet (Excel File) and Google Drive. You won\'t be able to download any files on your computer. If you are applying mention "OLIVER IS GREEN" at the start of your application. Thank you!', 'job_proposals': '50+', 'job_tags': '["Microsoft Excel", "Arabic", "English", "General Transcription", "Translation"]', 'job_id': '3f395a1ff5785c911aa0aa3326625e09'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,788] Inserting job: job_id=2893d8bffeb2cb5219f81fd9313aa570, job_url=https://www.upwork.com/jobs/App-Testing_~021924914448956563684, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 787682), 'job_title': 'App Testing', 'job_description': 'I want to test my app. Looking for real testers. Atleast 20 people I want.', 'job_proposals': '', 'job_tags': '["Mobile App Testing", "Bug Reports", "Android"]', 'job_id': '2893d8bffeb2cb5219f81fd9313aa570'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,793] Inserting job: job_id=58b2b6255192491ee667849c56879f18, job_url=https://www.upwork.com/jobs/USD-Register-URL-Contemporary-Web-Design-com_~021924987666895642852, job_details={'posted_date': datetime.datetime(2025, 5, 21, 5, 27, 42, 793683), 'job_title': "USD 40 -- Register a URL of 'Contemporary-Web-Design.com'", 'job_description': "USD 40 -- Register a URL of 'Contemporary-Web-Design.com' for one year on Dynadot.com, ensure email is enabled * ALL files are YOUR_FIRST_NAME_YOUR_LAST_NAME_2025_05_12_DESCRIPTION_A.XXX * Example: ANDREW_BLENCOWE_2025_05_11_UPDATED_FULL_TREE_A.ZIP * Failure to send all files lacking your full name in upper case will have you banned for life * Never use AI * Do not ask for 'a quick chat' * Do not ask for 'a quick Zoom call' * Accept offer now * Deadline is 20 minutes from reading this, if it take you longer you are too junior Send full credentials including current password in Word file", 'job_proposals': 'Less than 5', 'job_tags': '["HTML"]', 'job_id': '58b2b6255192491ee667849c56879f18'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,800] Inserting job: job_id=9812dbe6a7d2a3c0d9b0436cbdbb28bc, job_url=https://www.upwork.com/jobs/Developer-Needed-for-Quran-Recitation-Voice-Correction-App_~021924668977860328802, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 800689), 'job_title': 'AI Developer Needed for Quran Recitation Voice Correction App', 'job_description': 'We are seeking an experienced AI developer to create and enhance an application that helps correct the voice of individuals reciting the Quran. The ideal candidate will have a strong background in voice recognition and machine learning to ensure accurate feedback and improvements in recitation. The application should be user-friendly and cater specifically to the nuances of Quranic pronunciation. If you are passionate about leveraging technology to assist in religious education, we want to hear from you! Reference : https://apps.apple.com/de/app/tarteel-%D8%AA%D8%B1%D8%AA%D9%8A%D9%84-ai-quran/id1391009396 **Relevant Skills:** - Machine Learning - Voice Recognition Technology - AI Development - Mobile App Development - User Interface Design', 'job_proposals': '20 to 50', 'job_tags': '["Android", "iOS", "Smartphone", "Mobile App Development", "Android App Development"]', 'job_id': '9812dbe6a7d2a3c0d9b0436cbdbb28bc'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,806] Inserting job: job_id=9c71299a29a0d176ea32b43f1ea9ef36, job_url=https://www.upwork.com/jobs/Developer_~021924751099481562808, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 806690), 'job_title': 'AI Developer', 'job_description': 'creating systems with AI, like ChatGPT, but with our company name, for our employees to use. This way the conversations and history will stay internal to the company', 'job_proposals': '20 to 50', 'job_tags': '["Artificial Intelligence"]', 'job_id': '9c71299a29a0d176ea32b43f1ea9ef36'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,815] Inserting job: job_id=951883ccea71303ed193f8b0dc03603a, job_url=https://www.upwork.com/jobs/Model-Training-for-Number-Detection-Bibs-and-Placards_~021924868396164277217, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 815204), 'job_title': 'Model Training for Number Detection on Bibs and Placards', 'job_description': "We are seeking a skilled freelancer to assist in training a machine learning model specifically designed for detecting numbers on runner's bibs and motocross placards. The ideal candidate will have experience in computer vision and model training using appropriate datasets. Your role will involve data preprocessing, model selection, and evaluation to ensure accurate detection. If you have a passion for machine learning and can deliver high-quality results, we want to hear from you! **Relevant Skills:** - Machine Learning - Computer Vision - Data Preprocessing - Model Evaluation - Python Programming - TensorFlow/PyTorch", 'job_proposals': '50+', 'job_tags': '["Python", "Machine Learning", "TensorFlow", "Deep Learning", "Data Science"]', 'job_id': '951883ccea71303ed193f8b0dc03603a'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,821] Inserting job: job_id=7de9987cc4164fb7fb1383c9fdd50d2b, job_url=https://www.upwork.com/jobs/Computer-Vision-Consultant-Fix-Barrier-Distance-Estimation-Week-Project_~021924737658398187192, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 821216), 'job_title': 'Computer Vision Consultant – Fix Barrier Distance Estimation (1-Week Project)', 'job_description': 'Job Title: Computer Vision Consultant – Fix Barrier Distance Estimation (1-Week Project) Project Scope: We have a working AI-camera system that measures roadside barrier distances but face inaccuracies when the vehicle moves under varying road/driving conditions. This is a part of a bigger project where the signs along the roads are detected, distance between them are matched with reference to the standard values and reported.In addition to the camera, RTK GPS feed is also available. Goal:Diagnose and resolve distance estimation errors in real-time. Technical Requirements: •\u2060 \u2060Expertise in camera calibration and depth estimation. •\u2060 \u2060Experience debugging real-time computer vision systems using AI. Deliverables: 1.\u2060 \u2060Root-cause analysis of distance estimation failures. 2.\u2060 \u2060Proposed solution with implementation (Logic/code correction). 3.\u2060 \u2060Validation results showing improved accuracy. Duration:with in 1 week (Remote). Budget: Fixed-price or hourly Other Information: Tool-agnostic: The consultant can choose his preferred tools. Urgent & Focused:Looking for quick problem-solving specialists. Clear Outcome: Fix inaccuracy, not open-ended R&D. How to Apply: Briefly describe your approach to debugging similar vision systems. Share relevant experience.', 'job_proposals': '5 to 10', 'job_tags': '["YOLO", "Python", "Computer Vision", "Machine Learning", "Deep Learning", "C++"]', 'job_id': '7de9987cc4164fb7fb1383c9fdd50d2b'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,828] Inserting job: job_id=b737bbb180423f3ddeafcd7fed7f3995, job_url=https://www.upwork.com/jobs/Machine-Learning-Model-for-ASL-Gesture-Recognition_~021924716873944144349, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 828212), 'job_title': 'Machine Learning Model for ASL Gesture Recognition', 'job_description': 'We are seeking a skilled machine learning expert to develop a real-time model that can interpret American Sign Language (ASL) gestures and convert them into coherent sentences. The ideal candidate will possess experience in computer vision and natural language processing, with a strong understanding of real-time data processing. The project aims to create a seamless user experience for ASL interpretation, facilitating improved communication. If you are passionate about bridging technology and language, we want to hear from you!', 'job_proposals': '15 to 20', 'job_tags': '["Machine Learning", "TensorFlow", "Deep Learning", "Python", "Artificial Neural Network"]', 'job_id': 'b737bbb180423f3ddeafcd7fed7f3995'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,838] Inserting job: job_id=9f7e4128fc4153791f23350c4efa8d7d, job_url=https://www.upwork.com/jobs/Foot-Measurement-App-with-built-Scanner_~021925013659883858702, job_details={'posted_date': datetime.datetime(2025, 5, 21, 5, 27, 42, 838218), 'job_title': 'AI Foot Measurement App with built in Scanner', 'job_description': 'Project Brief: Foot Measurement App for Good Feet Arch Supports Project Name: Good Feet Arch Support Foot Measurement App Version: 1.0 Date: May 21, 2025 Prepared For: AI/App Developer Team Project Background We are excited to launch a new online store dedicated to selling Good Feet Arch Supports. To ensure our customers receive the best possible fit and experience, we need a seamless and accurate system for foot measurement. Our goal is to empower users to easily measure their own foot length, arch height, and arch length from home. With over 400 different styles of arch supports, this precise measurement will be crucial for recommending the exact product a customer needs, allowing them to confidently make a purchase online. This app is a cornerstone of our new online retail strategy, designed to replicate the personalized fitting experience of a physical store in a digital format.', 'job_proposals': '15 to 20', 'job_tags': '["Android", "iOS", "Smartphone", "Artificial Intelligence", "Mobile App Development", "Machine Learning", "Android App Development", "TensorFlow"]', 'job_id': '9f7e4128fc4153791f23350c4efa8d7d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,845] Inserting job: job_id=357468b1dc7a3dc812325fa0161ce3e9, job_url=https://www.upwork.com/jobs/Computer-Vision-Expert-for-Video-Based-Ergonomic-Risk-Assessment-Tool_~021924743077089650120, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 845217), 'job_title': 'Computer Vision/ML Expert for Video-Based Ergonomic Risk Assessment Tool', 'job_description': 'Description: We are building an AI-powered tool that uses video input to automatically assess ergonomic risks in workplace environments. Traditional ergonomic assessments are manual, subjective, and not scalable. Our goal is to automate this using computer vision and ML to provide objective, repeatable results and increase overall efficiency. Skill set: Pose estimation models (e.g. OpenPose, BlazePose, MoveNet, MediaPipe, etc.) Action and posture recognition based on body keypoints Mapping detected poses to ergonomic risk indicators (e.g. REBA/RULA-like scoring, joint angles, posture classification) Working with video input (camera feed or uploaded footage) to extract frames and run pose estimation consistently Temporal analysis – analyzing sequences of frames to evaluate sustained postures and repetitive motion Basic knowledge of biomechanics or experience in posture-related applications is a plus Ability to package the solution as a clean, reusable module or pipeline (Python preferred) Responsibilities and deliverables: Propose or help choose the right model(s) for pose detection Extract joint angles and relevant keypoints Implement logic to flag high-risk postures or ergonomic issues (e.g. neck tilt, shoulder raise, wrist angle, forward head posture, slouching) Design a lightweight pipeline that can process multiple videos efficiently Share sample output (e.g. annotated frames, JSON with scores, or heatmaps) Optional but nice to have: Experience with edge device optimization (e.g. TFLite or ONNX) Experience integrating models into APIs or simple UI Familiarity with existing ergonomic scoring systems (REBA/RULA) Please include: Brief about your experience with similar projects Any tools, frameworks, or models you typically use Portfolio of similar projects is a must Sample code repos or links (if public)', 'job_proposals': '10 to 15', 'job_tags': '["Machine Learning", "Artificial Intelligence", "Python"]', 'job_id': '357468b1dc7a3dc812325fa0161ce3e9'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,881] Inserting job: job_id=b4f9548a49f325419ea46f05d74d79ef, job_url=https://www.upwork.com/jobs/Simple-Image-generation_~021924896906547258336, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 881322), 'job_title': 'Simple AI Image generation', 'job_description': 'Simple AI Image generation, get 3d Image from text', 'job_proposals': '5 to 10', 'job_tags': '["AI Development"]', 'job_id': 'b4f9548a49f325419ea46f05d74d79ef'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,889] Inserting job: job_id=efd2899cb29b9cdf0b7bb3eb2ef0e1b6, job_url=https://www.upwork.com/jobs/Agent-Development-for-Daily-Tasks_~021924718129936865757, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 889305), 'job_title': 'AI Agent Development for Daily Tasks', 'job_description': 'We are seeking an experienced developer to create four AI agents tailored for streamlining my daily repetitive tasks. The ideal candidate will have a strong background in AI and automation technologies. The agents should be able to learn from user interactions and adapt to improve efficiency. If you are passionate about leveraging AI to enhance productivity, we would love to hear from you!', 'job_proposals': '15 to 20', 'job_tags': '["File Management", "File Maintenance", "Task Coordination", "Microsoft Excel", "Google Docs", "Google Sheets", "Data Entry", "Administrative Support", "Python", "Artificial Intelligence"]', 'job_id': 'efd2899cb29b9cdf0b7bb3eb2ef0e1b6'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,896] Inserting job: job_id=111fd85bdd8eaffccddc7b2d845a2d13, job_url=https://www.upwork.com/jobs/Developer-Needed-for-Video-Clip-Naming-System_~021924823453201038086, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 896216), 'job_title': 'AI Developer Needed for Video Clip Naming System', 'job_description': "I have 100 videos that my company has created about cities around the world. Each video is comprised of 15-30 clips. I need to come up with a descriptive file name for each of these clips  that makes it clear what the clip is about. The videos are stored in Google Drive, so we would want to come up with a system that renames these files directly in Google Drive if possible. Please respond in your proposal with how you would accomplish this, an estimate for when this task can be completed, and any previous examples of similar work you've done.", 'job_proposals': '20 to 50', 'job_tags': '["Graphic Design"]', 'job_id': '111fd85bdd8eaffccddc7b2d845a2d13'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,903] Inserting job: job_id=c795382e7e49676a758eb7b8da0bc599, job_url=https://www.upwork.com/jobs/Calendar-Web-App_~021924748575227780792, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 903231), 'job_title': 'Calendar Web App', 'job_description': 'I want to create a simple calendar app with the following features 1. Calendar View: Show a full month displaying all meetings in each day 2. Fetching data from ical/ics. User should be able to enter calendar URLs he wants to fetch. Data should be updates every night, also the user should have the option to manually sync. 3. Filter: User should be able to create and apply filters through natural language and use as many filters as he likes simultaneously. E.g. User names a filter “Weekdays” and writes “show only workdays”, after applying the app will grey out and cross days that dont match the filter. Another example would be “days with a minum 2h free slot between 1pm and 6pm” - now the app checks for any 2h slot that is free between 2 and 6pm. I created a prototype, you can find the video and images attached. Please layout the techstack you would use to create this application. Lookig forward to your proposals.', 'job_proposals': '20 to 50', 'job_tags': '["Web Development"]', 'job_id': 'c795382e7e49676a758eb7b8da0bc599'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,910] Inserting job: job_id=4ea69cba3d39b6b7b5a54f573747fd37, job_url=https://www.upwork.com/jobs/Engineer-for-Biomedical-Data-Processing_~021924893605220229348, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 910220), 'job_title': 'AI Engineer for Biomedical Data Processing', 'job_description': 'We are seeking an experienced AI Engineer with a strong background in machine learning and biomedical data processing. The ideal candidate should be proficient in Python and have experience with frameworks like PyTorch or TensorFlow. You will be responsible for developing and implementing machine learning models to analyze and interpret biomedical data. If you are passionate about advancing healthcare through technology, we would love to hear from you!', 'job_proposals': '5 to 10', 'job_tags': '["Machine Learning", "Artificial Intelligence", "Data Science", "Python", "Deep Learning"]', 'job_id': '4ea69cba3d39b6b7b5a54f573747fd37'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,918] Inserting job: job_id=6daa13308183f00a8124fdaea22073d2, job_url=https://www.upwork.com/jobs/Developer-Needed-for-Boxing-Video-Analysis-MVP-Pose-Detection-Combo-Stats_~021924846332709927686, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 918743), 'job_title': 'AI Developer Needed for Boxing Video Analysis MVP (Pose Detection + Combo Stats', 'job_description': 'Job Title: AI Developer for Boxing Fight Analysis MVP – Pose & Combo Detection Job Description: We’re building an MVP for an AI-powered boxing fight analysis tool. Users will upload sparring/match videos and receive stats like punch types (jab, cross, hook), combos (e.g., jab-cross-hook), and punch frequency per round. Your Task: • Build a backend system that takes video input and outputs JSON data with punch types and timestamps • Use pose estimation (OpenPose/MediaPipe) and motion tracking to detect punches • Optional: Help connect to a simple front-end (e.g., Streamlit or Bubble) Required Skills: • Python, OpenCV • PyTorch or TensorFlow • Pose estimation (OpenPose, MediaPipe, etc.) • Video processing & action recognition How We Work: You’ll work directly with me (solo founder). I communicate via Loom, chat, and shared Google Drive folders. We’ll collaborate in phases with clear milestones and feedback. Communication: Quick async updates every few days via Upwork or Slack preferred.', 'job_proposals': '10 to 15', 'job_tags': '["Python", "Machine Learning", "Deep Learning", "Computer Vision", "open cv", "pose estimation", "Data Annotation"]', 'job_id': '6daa13308183f00a8124fdaea22073d2'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,936] Inserting job: job_id=81870376da709556cdda607036552940, job_url=https://www.upwork.com/jobs/Lovable-developer-needed_~021924771160242003640, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 936748), 'job_title': 'Lovable AI developer needed', 'job_description': 'I have a MPV of a notes app built in lovable (just for fun, because I want to learn AI) So the notes app will have the ability to speak (or type) directly with an AI to create, edit, delete, and organize the notes into folders and subfolders for you, just by telling it to do so. The user will be able to do all those functions themselves as well, but they’ll also be able to say things like “Create a note based on this information"', 'job_proposals': '5 to 10', 'job_tags': '["AI Agent Development", "lovable", "Artificial Intelligence", "API"]', 'job_id': '81870376da709556cdda607036552940'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,942] Inserting job: job_id=b3636aec9718cef15ad9b021f1c53893, job_url=https://www.upwork.com/jobs/Guru-Stable-Job_~021924831014817013988, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 941746), 'job_title': 'AI Guru Stable Job', 'job_description': '--FULL TIME AMERICAN JOB INTERVIEW-- -- DO NOT USE AI IN ANY WAY-- Job description: You will be working with our team developing AI to replace the WP & WooCommerce sites with the latest AI tech. BID LOW to gain this full time American job. YOU MUST ANSWER THE QUESTIONS + DO NO use AI as we want to learn about you, personally. Use your best grammar and be consistent. With 20 years experience in hiring and interviewing 5,000 people, we noticed that the way a developer is writing and also the way he codes. We interview ONLY MULTINATIONALS who pays attention to details. Use proper grammar: - Start sentences with a capital letter - Names start with a capital letter - Use "I" and never "i" - Be consistent Please answer (we value honesty): 1. Can you work 7am to 4pm EST? 2. Can you work 43 hrs a week? 3. What size monitor (in inches) do you use? 4. What is your AI experience (please details) 5. What can you build with AI? 6. Links to AI agents you built. 7. Are you a company, individual, or an agency?', 'job_proposals': 'Less than 5', 'job_tags': '["AI Agent Development", "AI App Development", "AI Development"]', 'job_id': 'b3636aec9718cef15ad9b021f1c53893'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,948] Inserting job: job_id=61f40ec6c31bafc86f71ccbf57e4461a, job_url=https://www.upwork.com/jobs/Virtual-Assistant-Project-Arabic-Female-Character-Development_~021924840800617718752, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 948749), 'job_title': 'Virtual AI Assistant Project - Arabic Female Character Development', 'job_description': 'We are seeking a talented freelancer to create a virtual AI assistant with a focus on an Arabic female character. The ideal candidate will have experience in developing AI personas, incorporating cultural nuances, and ensuring natural language processing capabilities in Arabic. This project involves character design, dialogue scripting, and user interaction modeling. If you are passionate about AI technology and have a knack for storytelling, we want to hear from you!', 'job_proposals': 'Less than 5', 'job_tags': '["Adobe Illustrator", "Adobe Photoshop", "Graphic Design", "Content Writing"]', 'job_id': '61f40ec6c31bafc86f71ccbf57e4461a'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,953] Inserting job: job_id=986cbbff0a4f67169befac210fcffeeb, job_url=https://www.upwork.com/jobs/Coding-Tool-Screen-Recording-Developer_~021924772770470217441, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 953744), 'job_title': 'AI Coding Tool Screen Recording Developer', 'job_description': 'We are looking for a experienced software developer to record their screen while using our AI-powered coding tool for an upcoming commercial. The ideal candidate will have experience in software development. This is a straightforward project for someone comfortable writing and editing code, and who can clearly demonstrate the power of AI in coding.', 'job_proposals': '15 to 20', 'job_tags': '["AI Development", "AI-Generated Code", "JavaScript", "Python", "C++", "Java", "C#", "CSS"]', 'job_id': '986cbbff0a4f67169befac210fcffeeb'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,960] Inserting job: job_id=2447515c8b77a89ccc56590af2c8d5c9, job_url=https://www.upwork.com/jobs/Publishers-Wanted-for-Upcoming-Android-Game-Release_~021924823642431257350, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 960745), 'job_title': 'Publishers Wanted for an Upcoming Android Game Release', 'job_description': 'Seeking app publishers! Important: As part of this project I will ask you to Publish my game. What need to join the project and passively earn every month? 1. own a platform suitable for android app publishing 2. publish my game on it 3. provide with honest feedback', 'job_proposals': 'Less than 5', 'job_tags': '["Android App Development", "Game Development", "Mobile Game", "Android"]', 'job_id': '2447515c8b77a89ccc56590af2c8d5c9'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,965] Inserting job: job_id=bece5797dbf304b93d5935b81bd4f52b, job_url=https://www.upwork.com/jobs/Project-Development-and-Implementation_~021924838205009659456, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 965746), 'job_title': 'AI Project Development and Implementation', 'job_description': "We're seeking a skilled freelancer to assist with an AI project aimed at enhancing our product offerings. The ideal candidate will have experience in developing AI models, natural language processing, and machine learning techniques. You will collaborate with our team to design, test, and implement AI solutions that meet our business needs. Strong problem-solving skills and the ability to work independently are essential. If you're passionate about AI and ready to make an impact, we want to hear from you!", 'job_proposals': '20 to 50', 'job_tags': '["Artificial Intelligence", "Python", "Machine Learning", "C++", "JavaScript"]', 'job_id': 'bece5797dbf304b93d5935b81bd4f52b'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,971] Inserting job: job_id=b6d9b5b2713b2af6a244d5d5a8b25887, job_url=https://www.upwork.com/jobs/Junior-Developer-Job-Finding_~021924840265888267014, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 971750), 'job_title': 'Junior Developer Job Finding', 'job_description': "I am looking for a remote IT job. I have recently graduated - any jobs regarding development/programming. Please apply if you believe you can help me land a job. The deliverables would be a list of such jobs - the job postings from the companies' websites. The payment will be released if I do end up landing a job with one of the companies you've sent me.", 'job_proposals': '', 'job_tags': '["Web Development"]', 'job_id': 'b6d9b5b2713b2af6a244d5d5a8b25887'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,977] Inserting job: job_id=5d9b1c04cab39e38f6d03e93bb5a4e8d, job_url=https://www.upwork.com/jobs/Developer-for-Laser-Hardware-Project_~021924984814599889888, job_details={'posted_date': datetime.datetime(2025, 5, 21, 3, 27, 42, 977752), 'job_title': 'C++/Qt Developer for Laser Hardware Project', 'job_description': 'Requirements: Develop cross-platform apps using C++/Qt (desktop & mobile) Interface with laser hardware and protocols (e.g. MIDI, audio/video decoding, low-level network protocols) Optimize algorithms for performance and low latency Experience with hardware control OpenCV or image processing is a big plus Knowledge of working with multi threaded applications, mutexes ArtNet, DMX and other big show protocols is a plus also', 'job_proposals': '20 to 50', 'job_tags': '["C++", "Qt Framework"]', 'job_id': '5d9b1c04cab39e38f6d03e93bb5a4e8d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,983] Inserting job: job_id=ff263b2e2ce56df675cdaec427b03c4d, job_url=https://www.upwork.com/jobs/ViT-Model-Machine-Learning-load-existing-notebook_~021924830841213510624, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 983749), 'job_title': 'ViT Model Machine Learning Re-load existing notebook', 'job_description': 'I already build my ML model ViT and i want you to load the preprocessing code and also i need EDA (dana analysis) for my paper purpose, the accuracy number etc r already good pls submit your profile and i will show you more detail, also provide such experience similar to this, thanks.', 'job_proposals': '5 to 10', 'job_tags': '["Deep Neural Network", "Deep Learning Modeling", "Python", "Machine Learning", "TensorFlow", "Data Science", "Deep Learning", "Artificial Intelligence", "Keras"]', 'job_id': 'ff263b2e2ce56df675cdaec427b03c4d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,989] Inserting job: job_id=545c1251c7271f2f17a19aac7a1c26e1, job_url=https://www.upwork.com/jobs/Machine-Learning-Deep-Learning-Engineer-for-Feature-Development_~021924932335925421024, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 27, 42, 988743), 'job_title': 'Machine Learning & Deep Learning Engineer for AI Feature Development', 'job_description': 'We are looking for a skilled Machine Learning Engineer with hands-on experience in AI and Deep Learning to develop and integrate intelligent features into our product. You will be responsible for building and training models using frameworks like TensorFlow or PyTorch, pre-processing large datasets, and deploying models into scalable environments. Experience with NLP, computer vision, or predictive analytics is a plus. If you enjoy solving complex problems and building smart systems that drive real-world impact, we’d love to hear from you', 'job_proposals': '5 to 10', 'job_tags': '["Machine Learning", "TensorFlow", "Artificial Intelligence", "Deep Learning", "Artificial Neural Network"]', 'job_id': '545c1251c7271f2f17a19aac7a1c26e1'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:42,994] Inserting job: job_id=cfa79b104352413052f3e8504c002546, job_url=https://www.upwork.com/jobs/CUDA-Developer-Needed-Complete-MLP-Neural-Network-Implementation_~021924935300058095845, job_details={'posted_date': datetime.datetime(2025, 5, 21, 0, 27, 42, 994742), 'job_title': 'CUDA Developer Needed to Complete MLP Neural Network Implementation', 'job_description': 'We are looking for a C++/CUDA developer with an understanding of neural networks and GPU programming. Your task is to complete the implementation of a simple Multilayer Perceptron (MLP) model using CUDA. This project involves kernel-level work on matrix operations and neural network layers.', 'job_proposals': 'Less than 5', 'job_tags': '["C++", "Neural Network", "CUDA"]', 'job_id': 'cfa79b104352413052f3e8504c002546'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:27:43,000] Inserting job: job_id=b833b56b61f1988937759d8861533e3f, job_url=https://www.upwork.com/jobs/LSTM-Model-Creation-Tutorial_~021924970619827616518, job_details={'posted_date': datetime.datetime(2025, 5, 21, 3, 27, 43, 766), 'job_title': 'LSTM Model Creation Tutorial', 'job_description': 'I am seeking an experienced machine learning practitioner to guide me through the process of creating Long Short-Term Memory (LSTM) models. The ideal candidate will provide clear explanations, practical examples, and hands-on coding sessions. The goal is to develop a solid understanding of LSTM architecture and its applications in time series forecasting and sequence prediction. You should be comfortable using Python and relevant libraries like TensorFlow or Keras. If you have a passion for teaching and can simplify complex concepts, I would love to work with you!', 'job_proposals': 'Help Center', 'job_tags': '["Neural Network", "Keras", "Machine Learning", "Deep Learning", "TensorFlow", "Rating is 0 out of 5.", "$0 spent", "  USA", "Proposals: 5 to 10", "Youssef K.", "Web Development | Artificial Intelligence, C#, C++, CSS, CSS 3, Git", "Complete your profile", "70%", "Promote with ads", "Availability badge", "Off", "Edit availability badge", "Boost your profile", "Off", "Edit boost your profile", "Connects: 0", "Buy Connects", "View details", "|", "Free Connects", "Preferences"]', 'job_id': 'b833b56b61f1988937759d8861533e3f'}
+[INFO. scrapers.upwork, (line #198) - 2025-05-21 06:27:43,005] Closing browser...
+[INFO. scrapers.upwork, (line #207) - 2025-05-21 06:27:43,631] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 06:30:30,737] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 06:30:30,739] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 06:30:34,669] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 06:30:41,141] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 06:31:06,154] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 06:31:06,174] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 06:31:06,513] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 06:31:07,291] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 06:31:17,292] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 06:31:31,017] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 06:31:55,864] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #174) - 2025-05-21 06:31:58,993] Database file absolute path: c:\Semester 6\IR\Projects\jobs.db
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:58,994] Inserting job: job_id=3f395a1ff5785c911aa0aa3326625e09, job_url=https://www.upwork.com/jobs/Arabic-Audio-Recordings-Check_~021924692976907138128, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 58, 994830), 'job_title': 'Arabic Audio Recordings Check', 'job_description': 'Hello, I have 400 Arabic audio recordings, each recording is about 30 to 45 mins long. I am willing to hire 4 Arabic speaking freelancers who can understand Saudi Arabia Arabic language accent. The task is simple: 1. You have to listen the audio recording very properly and clearly and simultaneously check the data filled in excel file. 2. You have to verify excel file data with audio recording conversation and have to confirm if their is any mismatch or not. 3. You have to complete this task by 4th June 2025. 4. Daily \'x\' number of audio recordings with excel data file (Google Sheet) will be provided. And daily task allotted is to be completed on the same day as per Indian Standard Time. 5. The work will be totally online on Google Sheet (Excel File) and Google Drive. You won\'t be able to download any files on your computer. If you are applying mention "OLIVER IS GREEN" at the start of your application. Thank you!', 'job_proposals': '50+', 'job_tags': '["Microsoft Excel", "Arabic", "English", "General Transcription", "Translation"]', 'job_id': '3f395a1ff5785c911aa0aa3326625e09'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,000] Inserting job: job_id=2893d8bffeb2cb5219f81fd9313aa570, job_url=https://www.upwork.com/jobs/App-Testing_~021924914448956563684, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 941), 'job_title': 'App Testing', 'job_description': 'I want to test my app. Looking for real testers. Atleast 20 people I want.', 'job_proposals': '', 'job_tags': '["Mobile App Testing", "Bug Reports", "Android"]', 'job_id': '2893d8bffeb2cb5219f81fd9313aa570'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,006] Inserting job: job_id=58b2b6255192491ee667849c56879f18, job_url=https://www.upwork.com/jobs/USD-Register-URL-Contemporary-Web-Design-com_~021924987666895642852, job_details={'posted_date': datetime.datetime(2025, 5, 21, 5, 31, 59, 6454), 'job_title': "USD 40 -- Register a URL of 'Contemporary-Web-Design.com'", 'job_description': "USD 40 -- Register a URL of 'Contemporary-Web-Design.com' for one year on Dynadot.com, ensure email is enabled * ALL files are YOUR_FIRST_NAME_YOUR_LAST_NAME_2025_05_12_DESCRIPTION_A.XXX * Example: ANDREW_BLENCOWE_2025_05_11_UPDATED_FULL_TREE_A.ZIP * Failure to send all files lacking your full name in upper case will have you banned for life * Never use AI * Do not ask for 'a quick chat' * Do not ask for 'a quick Zoom call' * Accept offer now * Deadline is 20 minutes from reading this, if it take you longer you are too junior Send full credentials including current password in Word file", 'job_proposals': 'Less than 5', 'job_tags': '["HTML"]', 'job_id': '58b2b6255192491ee667849c56879f18'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,011] Inserting job: job_id=9c71299a29a0d176ea32b43f1ea9ef36, job_url=https://www.upwork.com/jobs/Developer_~021924751099481562808, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 11513), 'job_title': 'AI Developer', 'job_description': 'creating systems with AI, like ChatGPT, but with our company name, for our employees to use. This way the conversations and history will stay internal to the company', 'job_proposals': '20 to 50', 'job_tags': '["Artificial Intelligence"]', 'job_id': '9c71299a29a0d176ea32b43f1ea9ef36'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,016] Inserting job: job_id=951883ccea71303ed193f8b0dc03603a, job_url=https://www.upwork.com/jobs/Model-Training-for-Number-Detection-Bibs-and-Placards_~021924868396164277217, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 16455), 'job_title': 'Model Training for Number Detection on Bibs and Placards', 'job_description': "We are seeking a skilled freelancer to assist in training a machine learning model specifically designed for detecting numbers on runner's bibs and motocross placards. The ideal candidate will have experience in computer vision and model training using appropriate datasets. Your role will involve data preprocessing, model selection, and evaluation to ensure accurate detection. If you have a passion for machine learning and can deliver high-quality results, we want to hear from you! **Relevant Skills:** - Machine Learning - Computer Vision - Data Preprocessing - Model Evaluation - Python Programming - TensorFlow/PyTorch", 'job_proposals': '50+', 'job_tags': '["Python", "Machine Learning", "TensorFlow", "Deep Learning", "Data Science"]', 'job_id': '951883ccea71303ed193f8b0dc03603a'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,021] Inserting job: job_id=7de9987cc4164fb7fb1383c9fdd50d2b, job_url=https://www.upwork.com/jobs/Computer-Vision-Consultant-Fix-Barrier-Distance-Estimation-Week-Project_~021924737658398187192, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 20461), 'job_title': 'Computer Vision Consultant – Fix Barrier Distance Estimation (1-Week Project)', 'job_description': 'Job Title: Computer Vision Consultant – Fix Barrier Distance Estimation (1-Week Project) Project Scope: We have a working AI-camera system that measures roadside barrier distances but face inaccuracies when the vehicle moves under varying road/driving conditions. This is a part of a bigger project where the signs along the roads are detected, distance between them are matched with reference to the standard values and reported.In addition to the camera, RTK GPS feed is also available. Goal:Diagnose and resolve distance estimation errors in real-time. Technical Requirements: •\u2060 \u2060Expertise in camera calibration and depth estimation. •\u2060 \u2060Experience debugging real-time computer vision systems using AI. Deliverables: 1.\u2060 \u2060Root-cause analysis of distance estimation failures. 2.\u2060 \u2060Proposed solution with implementation (Logic/code correction). 3.\u2060 \u2060Validation results showing improved accuracy. Duration:with in 1 week (Remote). Budget: Fixed-price or hourly Other Information: Tool-agnostic: The consultant can choose his preferred tools. Urgent & Focused:Looking for quick problem-solving specialists. Clear Outcome: Fix inaccuracy, not open-ended R&D. How to Apply: Briefly describe your approach to debugging similar vision systems. Share relevant experience.', 'job_proposals': '5 to 10', 'job_tags': '["YOLO", "Python", "Computer Vision", "Machine Learning", "Deep Learning", "C++"]', 'job_id': '7de9987cc4164fb7fb1383c9fdd50d2b'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,026] Inserting job: job_id=b737bbb180423f3ddeafcd7fed7f3995, job_url=https://www.upwork.com/jobs/Machine-Learning-Model-for-ASL-Gesture-Recognition_~021924716873944144349, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 26493), 'job_title': 'Machine Learning Model for ASL Gesture Recognition', 'job_description': 'We are seeking a skilled machine learning expert to develop a real-time model that can interpret American Sign Language (ASL) gestures and convert them into coherent sentences. The ideal candidate will possess experience in computer vision and natural language processing, with a strong understanding of real-time data processing. The project aims to create a seamless user experience for ASL interpretation, facilitating improved communication. If you are passionate about bridging technology and language, we want to hear from you!', 'job_proposals': '15 to 20', 'job_tags': '["Machine Learning", "TensorFlow", "Deep Learning", "Python", "Artificial Neural Network"]', 'job_id': 'b737bbb180423f3ddeafcd7fed7f3995'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,031] Inserting job: job_id=21ad1d7fa9ca038f401bea4983472328, job_url=https://www.upwork.com/jobs/Programming-for-Chemistry-Experiment-Report-Feedback_~021925031524109870048, job_details={'posted_date': datetime.datetime(2025, 5, 21, 6, 31, 59, 31882), 'job_title': 'AI Programming for Chemistry Experiment Report Feedback', 'job_description': 'We are seeking an experienced AI developer to create a program that provides automated feedback on student Chemistry experiment reports. The ideal candidate will have a deep understanding of educational tools and be able to design an AI system that evaluates scientific writing and offers constructive feedback. I want my AI to give feedback on student Chemistry experiment reports. I have marked examples of students. I have very specific binary Student criteria descriptions for it to follow, (0/1) I want the AI to use this criteria solely to mark them. I want the AI to be able to make its own translation of my criteria, so that it can keep updating its own AI specific criteria description language, thereby fully understanding what I want. I want the AI to justify its (0/1) criteria using logical and accurate chemistry. I need to be able to teach the AI when it makes mistakes or eventually to persuade me that I am wrong. I want the AI to quote a section of the students text which shows the location at which point the criteria was either given or denied. Previous attempts just using website AI such and others failed, primarily because it was either unable to understand the chemistry, forgot information or files mid-way through the process or often was inconsistent with its output. (Full script of Chat gpt 4.0 conversation available that I can share). This involved often renaming columns, not doing what we had previously established, simplifying answers, etc. If the final solution is inaccurate in understanding the chemistry I can not trust it 100%. If the final solution is inconsistent in its application of the binary criteria after the learning process then I can not trust it 100%. If I can not trust the final solution 100%, then I will have to read the entire report myself and the solution will have zero value. It is a very binary outcome. It will be usable or useless. I will provide the following files: [More example students can be provided if necessary for further learning] COMPARISON ALAYNA+SUNGYUN.xls [This file is for the AI learning process] STUDENT SUNGYUN 2025.doc [Student 1 Chemistry report] STUDENT ALAYNA 2025.doc [Student 2 Chemistry report] FINAL OUTPUT.xls [What the student feedback file going to the student should look like]', 'job_proposals': 'Less than 5', 'job_tags': '["Data Analysis"]', 'job_id': '21ad1d7fa9ca038f401bea4983472328'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,036] Inserting job: job_id=357468b1dc7a3dc812325fa0161ce3e9, job_url=https://www.upwork.com/jobs/Computer-Vision-Expert-for-Video-Based-Ergonomic-Risk-Assessment-Tool_~021924743077089650120, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 36871), 'job_title': 'Computer Vision/ML Expert for Video-Based Ergonomic Risk Assessment Tool', 'job_description': 'Description: We are building an AI-powered tool that uses video input to automatically assess ergonomic risks in workplace environments. Traditional ergonomic assessments are manual, subjective, and not scalable. Our goal is to automate this using computer vision and ML to provide objective, repeatable results and increase overall efficiency. Skill set: Pose estimation models (e.g. OpenPose, BlazePose, MoveNet, MediaPipe, etc.) Action and posture recognition based on body keypoints Mapping detected poses to ergonomic risk indicators (e.g. REBA/RULA-like scoring, joint angles, posture classification) Working with video input (camera feed or uploaded footage) to extract frames and run pose estimation consistently Temporal analysis – analyzing sequences of frames to evaluate sustained postures and repetitive motion Basic knowledge of biomechanics or experience in posture-related applications is a plus Ability to package the solution as a clean, reusable module or pipeline (Python preferred) Responsibilities and deliverables: Propose or help choose the right model(s) for pose detection Extract joint angles and relevant keypoints Implement logic to flag high-risk postures or ergonomic issues (e.g. neck tilt, shoulder raise, wrist angle, forward head posture, slouching) Design a lightweight pipeline that can process multiple videos efficiently Share sample output (e.g. annotated frames, JSON with scores, or heatmaps) Optional but nice to have: Experience with edge device optimization (e.g. TFLite or ONNX) Experience integrating models into APIs or simple UI Familiarity with existing ergonomic scoring systems (REBA/RULA) Please include: Brief about your experience with similar projects Any tools, frameworks, or models you typically use Portfolio of similar projects is a must Sample code repos or links (if public)', 'job_proposals': '10 to 15', 'job_tags': '["Machine Learning", "Artificial Intelligence", "Python"]', 'job_id': '357468b1dc7a3dc812325fa0161ce3e9'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,043] Inserting job: job_id=9f7e4128fc4153791f23350c4efa8d7d, job_url=https://www.upwork.com/jobs/Foot-Measurement-App-with-built-Scanner_~021925013659883858702, job_details={'posted_date': datetime.datetime(2025, 5, 21, 5, 31, 59, 43033), 'job_title': 'AI Foot Measurement App with built in Scanner', 'job_description': 'Project Brief: Foot Measurement App for Good Feet Arch Supports Project Name: Good Feet Arch Support Foot Measurement App Version: 1.0 Date: May 21, 2025 Prepared For: AI/App Developer Team Project Background We are excited to launch a new online store dedicated to selling Good Feet Arch Supports. To ensure our customers receive the best possible fit and experience, we need a seamless and accurate system for foot measurement. Our goal is to empower users to easily measure their own foot length, arch height, and arch length from home. With over 400 different styles of arch supports, this precise measurement will be crucial for recommending the exact product a customer needs, allowing them to confidently make a purchase online. This app is a cornerstone of our new online retail strategy, designed to replicate the personalized fitting experience of a physical store in a digital format.', 'job_proposals': '15 to 20', 'job_tags': '["Android", "iOS", "Smartphone", "Artificial Intelligence", "Mobile App Development", "Machine Learning", "Android App Development", "TensorFlow"]', 'job_id': '9f7e4128fc4153791f23350c4efa8d7d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,072] Inserting job: job_id=b4f9548a49f325419ea46f05d74d79ef, job_url=https://www.upwork.com/jobs/Simple-Image-generation_~021924896906547258336, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 72255), 'job_title': 'Simple AI Image generation', 'job_description': 'Simple AI Image generation, get 3d Image from text', 'job_proposals': '5 to 10', 'job_tags': '["AI Development"]', 'job_id': 'b4f9548a49f325419ea46f05d74d79ef'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,077] Inserting job: job_id=efd2899cb29b9cdf0b7bb3eb2ef0e1b6, job_url=https://www.upwork.com/jobs/Agent-Development-for-Daily-Tasks_~021924718129936865757, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 77392), 'job_title': 'AI Agent Development for Daily Tasks', 'job_description': 'We are seeking an experienced developer to create four AI agents tailored for streamlining my daily repetitive tasks. The ideal candidate will have a strong background in AI and automation technologies. The agents should be able to learn from user interactions and adapt to improve efficiency. If you are passionate about leveraging AI to enhance productivity, we would love to hear from you!', 'job_proposals': '15 to 20', 'job_tags': '["File Management", "File Maintenance", "Task Coordination", "Microsoft Excel", "Google Docs", "Google Sheets", "Data Entry", "Administrative Support", "Python", "Artificial Intelligence"]', 'job_id': 'efd2899cb29b9cdf0b7bb3eb2ef0e1b6'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,083] Inserting job: job_id=111fd85bdd8eaffccddc7b2d845a2d13, job_url=https://www.upwork.com/jobs/Developer-Needed-for-Video-Clip-Naming-System_~021924823453201038086, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 83902), 'job_title': 'AI Developer Needed for Video Clip Naming System', 'job_description': "I have 100 videos that my company has created about cities around the world. Each video is comprised of 15-30 clips. I need to come up with a descriptive file name for each of these clips  that makes it clear what the clip is about. The videos are stored in Google Drive, so we would want to come up with a system that renames these files directly in Google Drive if possible. Please respond in your proposal with how you would accomplish this, an estimate for when this task can be completed, and any previous examples of similar work you've done.", 'job_proposals': '20 to 50', 'job_tags': '["Graphic Design"]', 'job_id': '111fd85bdd8eaffccddc7b2d845a2d13'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,088] Inserting job: job_id=c795382e7e49676a758eb7b8da0bc599, job_url=https://www.upwork.com/jobs/Calendar-Web-App_~021924748575227780792, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 88352), 'job_title': 'Calendar Web App', 'job_description': 'I want to create a simple calendar app with the following features 1. Calendar View: Show a full month displaying all meetings in each day 2. Fetching data from ical/ics. User should be able to enter calendar URLs he wants to fetch. Data should be updates every night, also the user should have the option to manually sync. 3. Filter: User should be able to create and apply filters through natural language and use as many filters as he likes simultaneously. E.g. User names a filter “Weekdays” and writes “show only workdays”, after applying the app will grey out and cross days that dont match the filter. Another example would be “days with a minum 2h free slot between 1pm and 6pm” - now the app checks for any 2h slot that is free between 2 and 6pm. I created a prototype, you can find the video and images attached. Please layout the techstack you would use to create this application. Lookig forward to your proposals.', 'job_proposals': '20 to 50', 'job_tags': '["Web Development"]', 'job_id': 'c795382e7e49676a758eb7b8da0bc599'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,094] Inserting job: job_id=4ea69cba3d39b6b7b5a54f573747fd37, job_url=https://www.upwork.com/jobs/Engineer-for-Biomedical-Data-Processing_~021924893605220229348, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 94354), 'job_title': 'AI Engineer for Biomedical Data Processing', 'job_description': 'We are seeking an experienced AI Engineer with a strong background in machine learning and biomedical data processing. The ideal candidate should be proficient in Python and have experience with frameworks like PyTorch or TensorFlow. You will be responsible for developing and implementing machine learning models to analyze and interpret biomedical data. If you are passionate about advancing healthcare through technology, we would love to hear from you!', 'job_proposals': '5 to 10', 'job_tags': '["Machine Learning", "Artificial Intelligence", "Data Science", "Python", "Deep Learning"]', 'job_id': '4ea69cba3d39b6b7b5a54f573747fd37'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,101] Inserting job: job_id=6daa13308183f00a8124fdaea22073d2, job_url=https://www.upwork.com/jobs/Developer-Needed-for-Boxing-Video-Analysis-MVP-Pose-Detection-Combo-Stats_~021924846332709927686, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 101354), 'job_title': 'AI Developer Needed for Boxing Video Analysis MVP (Pose Detection + Combo Stats', 'job_description': 'Job Title: AI Developer for Boxing Fight Analysis MVP – Pose & Combo Detection Job Description: We’re building an MVP for an AI-powered boxing fight analysis tool. Users will upload sparring/match videos and receive stats like punch types (jab, cross, hook), combos (e.g., jab-cross-hook), and punch frequency per round. Your Task: • Build a backend system that takes video input and outputs JSON data with punch types and timestamps • Use pose estimation (OpenPose/MediaPipe) and motion tracking to detect punches • Optional: Help connect to a simple front-end (e.g., Streamlit or Bubble) Required Skills: • Python, OpenCV • PyTorch or TensorFlow • Pose estimation (OpenPose, MediaPipe, etc.) • Video processing & action recognition How We Work: You’ll work directly with me (solo founder). I communicate via Loom, chat, and shared Google Drive folders. We’ll collaborate in phases with clear milestones and feedback. Communication: Quick async updates every few days via Upwork or Slack preferred.', 'job_proposals': '10 to 15', 'job_tags': '["Python", "Machine Learning", "Deep Learning", "Computer Vision", "open cv", "pose estimation", "Data Annotation"]', 'job_id': '6daa13308183f00a8124fdaea22073d2'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,116] Inserting job: job_id=81870376da709556cdda607036552940, job_url=https://www.upwork.com/jobs/Lovable-developer-needed_~021924771160242003640, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 116884), 'job_title': 'Lovable AI developer needed', 'job_description': 'I have a MPV of a notes app built in lovable (just for fun, because I want to learn AI) So the notes app will have the ability to speak (or type) directly with an AI to create, edit, delete, and organize the notes into folders and subfolders for you, just by telling it to do so. The user will be able to do all those functions themselves as well, but they’ll also be able to say things like “Create a note based on this information"', 'job_proposals': '5 to 10', 'job_tags': '["AI Agent Development", "lovable", "Artificial Intelligence", "API"]', 'job_id': '81870376da709556cdda607036552940'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,121] Inserting job: job_id=b3636aec9718cef15ad9b021f1c53893, job_url=https://www.upwork.com/jobs/Guru-Stable-Job_~021924831014817013988, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 121886), 'job_title': 'AI Guru Stable Job', 'job_description': '--FULL TIME AMERICAN JOB INTERVIEW-- -- DO NOT USE AI IN ANY WAY-- Job description: You will be working with our team developing AI to replace the WP & WooCommerce sites with the latest AI tech. BID LOW to gain this full time American job. YOU MUST ANSWER THE QUESTIONS + DO NO use AI as we want to learn about you, personally. Use your best grammar and be consistent. With 20 years experience in hiring and interviewing 5,000 people, we noticed that the way a developer is writing and also the way he codes. We interview ONLY MULTINATIONALS who pays attention to details. Use proper grammar: - Start sentences with a capital letter - Names start with a capital letter - Use "I" and never "i" - Be consistent Please answer (we value honesty): 1. Can you work 7am to 4pm EST? 2. Can you work 43 hrs a week? 3. What size monitor (in inches) do you use? 4. What is your AI experience (please details) 5. What can you build with AI? 6. Links to AI agents you built. 7. Are you a company, individual, or an agency?', 'job_proposals': 'Less than 5', 'job_tags': '["AI Agent Development", "AI App Development", "AI Development"]', 'job_id': 'b3636aec9718cef15ad9b021f1c53893'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,127] Inserting job: job_id=61f40ec6c31bafc86f71ccbf57e4461a, job_url=https://www.upwork.com/jobs/Virtual-Assistant-Project-Arabic-Female-Character-Development_~021924840800617718752, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 127886), 'job_title': 'Virtual AI Assistant Project - Arabic Female Character Development', 'job_description': 'We are seeking a talented freelancer to create a virtual AI assistant with a focus on an Arabic female character. The ideal candidate will have experience in developing AI personas, incorporating cultural nuances, and ensuring natural language processing capabilities in Arabic. This project involves character design, dialogue scripting, and user interaction modeling. If you are passionate about AI technology and have a knack for storytelling, we want to hear from you!', 'job_proposals': 'Less than 5', 'job_tags': '["Adobe Illustrator", "Adobe Photoshop", "Graphic Design", "Content Writing"]', 'job_id': '61f40ec6c31bafc86f71ccbf57e4461a'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,132] Inserting job: job_id=986cbbff0a4f67169befac210fcffeeb, job_url=https://www.upwork.com/jobs/Coding-Tool-Screen-Recording-Developer_~021924772770470217441, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 132885), 'job_title': 'AI Coding Tool Screen Recording Developer', 'job_description': 'We are looking for a experienced software developer to record their screen while using our AI-powered coding tool for an upcoming commercial. The ideal candidate will have experience in software development. This is a straightforward project for someone comfortable writing and editing code, and who can clearly demonstrate the power of AI in coding.', 'job_proposals': '15 to 20', 'job_tags': '["AI Development", "AI-Generated Code", "JavaScript", "Python", "C++", "Java", "C#", "CSS"]', 'job_id': '986cbbff0a4f67169befac210fcffeeb'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,136] Inserting job: job_id=2447515c8b77a89ccc56590af2c8d5c9, job_url=https://www.upwork.com/jobs/Publishers-Wanted-for-Upcoming-Android-Game-Release_~021924823642431257350, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 136886), 'job_title': 'Publishers Wanted for an Upcoming Android Game Release', 'job_description': 'Seeking app publishers! Important: As part of this project I will ask you to Publish my game. What need to join the project and passively earn every month? 1. own a platform suitable for android app publishing 2. publish my game on it 3. provide with honest feedback', 'job_proposals': 'Less than 5', 'job_tags': '["Android App Development", "Game Development", "Mobile Game", "Android"]', 'job_id': '2447515c8b77a89ccc56590af2c8d5c9'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,141] Inserting job: job_id=bece5797dbf304b93d5935b81bd4f52b, job_url=https://www.upwork.com/jobs/Project-Development-and-Implementation_~021924838205009659456, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 141889), 'job_title': 'AI Project Development and Implementation', 'job_description': "We're seeking a skilled freelancer to assist with an AI project aimed at enhancing our product offerings. The ideal candidate will have experience in developing AI models, natural language processing, and machine learning techniques. You will collaborate with our team to design, test, and implement AI solutions that meet our business needs. Strong problem-solving skills and the ability to work independently are essential. If you're passionate about AI and ready to make an impact, we want to hear from you!", 'job_proposals': '20 to 50', 'job_tags': '["Artificial Intelligence", "Python", "Machine Learning", "C++", "JavaScript"]', 'job_id': 'bece5797dbf304b93d5935b81bd4f52b'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,152] Inserting job: job_id=b6d9b5b2713b2af6a244d5d5a8b25887, job_url=https://www.upwork.com/jobs/Junior-Developer-Job-Finding_~021924840265888267014, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 152885), 'job_title': 'Junior Developer Job Finding', 'job_description': "I am looking for a remote IT job. I have recently graduated - any jobs regarding development/programming. Please apply if you believe you can help me land a job. The deliverables would be a list of such jobs - the job postings from the companies' websites. The payment will be released if I do end up landing a job with one of the companies you've sent me.", 'job_proposals': '', 'job_tags': '["Web Development"]', 'job_id': 'b6d9b5b2713b2af6a244d5d5a8b25887'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,158] Inserting job: job_id=5d9b1c04cab39e38f6d03e93bb5a4e8d, job_url=https://www.upwork.com/jobs/Developer-for-Laser-Hardware-Project_~021924984814599889888, job_details={'posted_date': datetime.datetime(2025, 5, 21, 3, 31, 59, 158886), 'job_title': 'C++/Qt Developer for Laser Hardware Project', 'job_description': 'Requirements: Develop cross-platform apps using C++/Qt (desktop & mobile) Interface with laser hardware and protocols (e.g. MIDI, audio/video decoding, low-level network protocols) Optimize algorithms for performance and low latency Experience with hardware control OpenCV or image processing is a big plus Knowledge of working with multi threaded applications, mutexes ArtNet, DMX and other big show protocols is a plus also', 'job_proposals': '20 to 50', 'job_tags': '["C++", "Qt Framework"]', 'job_id': '5d9b1c04cab39e38f6d03e93bb5a4e8d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,164] Inserting job: job_id=ff263b2e2ce56df675cdaec427b03c4d, job_url=https://www.upwork.com/jobs/ViT-Model-Machine-Learning-load-existing-notebook_~021924830841213510624, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 164888), 'job_title': 'ViT Model Machine Learning Re-load existing notebook', 'job_description': 'I already build my ML model ViT and i want you to load the preprocessing code and also i need EDA (dana analysis) for my paper purpose, the accuracy number etc r already good pls submit your profile and i will show you more detail, also provide such experience similar to this, thanks.', 'job_proposals': '5 to 10', 'job_tags': '["Deep Neural Network", "Deep Learning Modeling", "Python", "Machine Learning", "TensorFlow", "Data Science", "Deep Learning", "Artificial Intelligence", "Keras"]', 'job_id': 'ff263b2e2ce56df675cdaec427b03c4d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,172] Inserting job: job_id=545c1251c7271f2f17a19aac7a1c26e1, job_url=https://www.upwork.com/jobs/Machine-Learning-Deep-Learning-Engineer-for-Feature-Development_~021924932335925421024, job_details={'posted_date': datetime.datetime(2025, 5, 20, 6, 31, 59, 172886), 'job_title': 'Machine Learning & Deep Learning Engineer for AI Feature Development', 'job_description': 'We are looking for a skilled Machine Learning Engineer with hands-on experience in AI and Deep Learning to develop and integrate intelligent features into our product. You will be responsible for building and training models using frameworks like TensorFlow or PyTorch, pre-processing large datasets, and deploying models into scalable environments. Experience with NLP, computer vision, or predictive analytics is a plus. If you enjoy solving complex problems and building smart systems that drive real-world impact, we’d love to hear from you', 'job_proposals': '5 to 10', 'job_tags': '["Machine Learning", "TensorFlow", "Artificial Intelligence", "Deep Learning", "Artificial Neural Network"]', 'job_id': '545c1251c7271f2f17a19aac7a1c26e1'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,179] Inserting job: job_id=cfa79b104352413052f3e8504c002546, job_url=https://www.upwork.com/jobs/CUDA-Developer-Needed-Complete-MLP-Neural-Network-Implementation_~021924935300058095845, job_details={'posted_date': datetime.datetime(2025, 5, 21, 0, 31, 59, 179887), 'job_title': 'CUDA Developer Needed to Complete MLP Neural Network Implementation', 'job_description': 'We are looking for a C++/CUDA developer with an understanding of neural networks and GPU programming. Your task is to complete the implementation of a simple Multilayer Perceptron (MLP) model using CUDA. This project involves kernel-level work on matrix operations and neural network layers.', 'job_proposals': 'Less than 5', 'job_tags': '["C++", "Neural Network", "CUDA"]', 'job_id': 'cfa79b104352413052f3e8504c002546'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 06:31:59,186] Inserting job: job_id=b833b56b61f1988937759d8861533e3f, job_url=https://www.upwork.com/jobs/LSTM-Model-Creation-Tutorial_~021924970619827616518, job_details={'posted_date': datetime.datetime(2025, 5, 21, 2, 31, 59, 185887), 'job_title': 'LSTM Model Creation Tutorial', 'job_description': 'I am seeking an experienced machine learning practitioner to guide me through the process of creating Long Short-Term Memory (LSTM) models. The ideal candidate will provide clear explanations, practical examples, and hands-on coding sessions. The goal is to develop a solid understanding of LSTM architecture and its applications in time series forecasting and sequence prediction. You should be comfortable using Python and relevant libraries like TensorFlow or Keras. If you have a passion for teaching and can simplify complex concepts, I would love to work with you!', 'job_proposals': 'Help Center', 'job_tags': '["Neural Network", "Keras", "Machine Learning", "Deep Learning", "TensorFlow", "Rating is 0 out of 5.", "$0 spent", "  USA", "Proposals: 5 to 10", "Youssef K.", "Web Development | Artificial Intelligence, C#, C++, CSS, CSS 3, Git", "Complete your profile", "70%", "Promote with ads", "Availability badge", "Off", "Edit availability badge", "Boost your profile", "Off", "Edit boost your profile", "Connects: 0", "Buy Connects", "View details", "|", "Free Connects", "Preferences"]', 'job_id': 'b833b56b61f1988937759d8861533e3f'}
+[INFO. scrapers.upwork, (line #198) - 2025-05-21 06:31:59,192] Closing browser...
+[INFO. scrapers.upwork, (line #207) - 2025-05-21 06:31:59,845] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 17:07:52,480] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 17:07:52,480] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 17:07:56,675] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 17:08:04,799] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 17:08:29,804] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 17:08:29,830] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 17:08:30,181] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 17:08:30,951] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 17:08:40,964] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #207) - 2025-05-21 17:08:50,372] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 17:11:06,706] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 17:11:06,707] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 17:11:10,488] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 17:11:17,291] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 17:11:42,293] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 17:11:42,330] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 17:11:42,679] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 17:11:43,451] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 17:11:53,463] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 17:12:07,377] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 17:12:32,279] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #174) - 2025-05-21 17:12:35,383] Database file absolute path: c:\Semester 6\IR\Projects\jobs.db
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,384] Inserting job: job_id=74492ccad978ad15bda0a866e8aa2e04, job_url=https://www.upwork.com/jobs/Arabic-Language-Interview-questions-Peer-review_~021925098762565280736, job_details={'posted_date': datetime.datetime(2025, 5, 21, 11, 12, 35, 384074), 'job_title': 'Arabic Language Interview questions- Peer review', 'job_description': 'Looking for Arabic Language Subject Matter Expert (SME) Requirements: • Proficient in spoken and written Arabic • Familiar with interview processes and professional communication • Ability to understand and respond to AI-generated interview questions in Arabic • Comfortable speaking in front of a camera (responses will be recorded) Expected Work: • Participate as a candidate in simulated AI-driven interviews • Listen and respond to questions asked by the AI bot in Arabic • Provide feedback on language accuracy, cultural appropriateness, and clarity • Help test and validate the Arabic support feature in the AI Interview tool We pay 5$ per interview question. There will be around 7-8 interview questions, all verbal. SME should be able to give very detailed feedback also on every aspect of the process. Interview will typically take 5-10 minutes only, but per interview cost is high so that SME need share detailed feedback on every aspect of the interview', 'job_proposals': '20 to 50', 'job_tags': '["Arabic"]', 'job_id': '74492ccad978ad15bda0a866e8aa2e04'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,393] Inserting job: job_id=45173a902f59897184c0fa4fd854acbf, job_url=https://www.upwork.com/jobs/Egypt-Pick-something-locally_~021925124249632453743, job_details={'posted_date': datetime.datetime(2025, 5, 21, 13, 12, 35, 392236), 'job_title': 'Egypt - Pick up something locally', 'job_description': 'I need someone who can pick up an item for me in Egypt New Cairo, then upload the file to a google drive. I can offer you payment and a good review for your profile', 'job_proposals': '20 to 50', 'job_tags': '["Android"]', 'job_id': '45173a902f59897184c0fa4fd854acbf'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,399] Inserting job: job_id=951883ccea71303ed193f8b0dc03603a, job_url=https://www.upwork.com/jobs/Model-Training-for-Number-Detection-Bibs-and-Placards_~021924868396164277217, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 399547), 'job_title': 'Model Training for Number Detection on Bibs and Placards', 'job_description': "We are seeking a skilled freelancer to assist in training a machine learning model specifically designed for detecting numbers on runner's bibs and motocross placards. The ideal candidate will have experience in computer vision and model training using appropriate datasets. Your role will involve data preprocessing, model selection, and evaluation to ensure accurate detection. If you have a passion for machine learning and can deliver high-quality results, we want to hear from you! **Relevant Skills:** - Machine Learning - Computer Vision - Data Preprocessing - Model Evaluation - Python Programming - TensorFlow/PyTorch", 'job_proposals': '50+', 'job_tags': '["Python", "Machine Learning", "TensorFlow", "Deep Learning", "Data Science"]', 'job_id': '951883ccea71303ed193f8b0dc03603a'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,433] Inserting job: job_id=61f40ec6c31bafc86f71ccbf57e4461a, job_url=https://www.upwork.com/jobs/Virtual-Assistant-Project-Arabic-Female-Character-Development_~021924840800617718752, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 433213), 'job_title': 'Virtual AI Assistant Project - Arabic Female Character Development', 'job_description': 'We are seeking a talented freelancer to create a virtual AI assistant with a focus on an Arabic female character. The ideal candidate will have experience in developing AI personas, incorporating cultural nuances, and ensuring natural language processing capabilities in Arabic. This project involves character design, dialogue scripting, and user interaction modeling. If you are passionate about AI technology and have a knack for storytelling, we want to hear from you!', 'job_proposals': 'Less than 5', 'job_tags': '["Adobe Illustrator", "Adobe Photoshop", "Graphic Design", "Content Writing"]', 'job_id': '61f40ec6c31bafc86f71ccbf57e4461a'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,440] Inserting job: job_id=6d7f2f69b41d11c88c5202af30e6df72, job_url=https://www.upwork.com/jobs/Machine-Learning-Engineer-Needed-for-Short-Project_~021925159997458953327, job_details={'posted_date': datetime.datetime(2025, 5, 21, 15, 12, 35, 439222), 'job_title': 'Machine Learning Engineer Needed for Short Project', 'job_description': 'We are seeking a skilled Machine Learning Engineer to assist us with a short-term project. The ideal candidate should have experience in developing and deploying machine learning models. Your primary responsibilities will include data preprocessing, model selection, and evaluation. If you have a passion for solving complex problems and a strong foundation in ML algorithms, we would love to hear from you!', 'job_proposals': '10 to 15', 'job_tags': '["Python", "Machine Learning", "TensorFlow", "Data Science", "Deep Learning"]', 'job_id': '6d7f2f69b41d11c88c5202af30e6df72'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,446] Inserting job: job_id=b4f9548a49f325419ea46f05d74d79ef, job_url=https://www.upwork.com/jobs/Simple-Image-generation_~021924896906547258336, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 446222), 'job_title': 'Simple AI Image generation', 'job_description': 'Simple AI Image generation, get 3d Image from text', 'job_proposals': '10 to 15', 'job_tags': '["AI Development"]', 'job_id': 'b4f9548a49f325419ea46f05d74d79ef'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,452] Inserting job: job_id=2893d8bffeb2cb5219f81fd9313aa570, job_url=https://www.upwork.com/jobs/App-Testing_~021924914448956563684, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 451851), 'job_title': 'App Testing', 'job_description': 'I want to test my app. Looking for real testers. Atleast 20 people I want.', 'job_proposals': '50+', 'job_tags': '["Mobile App Testing", "Bug Reports", "Android"]', 'job_id': '2893d8bffeb2cb5219f81fd9313aa570'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,458] Inserting job: job_id=ff263b2e2ce56df675cdaec427b03c4d, job_url=https://www.upwork.com/jobs/ViT-Model-Machine-Learning-load-existing-notebook_~021924830841213510624, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 458940), 'job_title': 'ViT Model Machine Learning Re-load existing notebook', 'job_description': 'I already build my ML model ViT and i want you to load the preprocessing code and also i need EDA (dana analysis) for my paper purpose, the accuracy number etc r already good pls submit your profile and i will show you more detail, also provide such experience similar to this, thanks.', 'job_proposals': '5 to 10', 'job_tags': '["Deep Neural Network", "Deep Learning Modeling", "Python", "Machine Learning", "TensorFlow", "Data Science", "Deep Learning", "Artificial Intelligence", "Keras"]', 'job_id': 'ff263b2e2ce56df675cdaec427b03c4d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,464] Inserting job: job_id=4ea69cba3d39b6b7b5a54f573747fd37, job_url=https://www.upwork.com/jobs/Engineer-for-Biomedical-Data-Processing_~021924893605220229348, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 464950), 'job_title': 'AI Engineer for Biomedical Data Processing', 'job_description': 'We are seeking an experienced AI Engineer with a strong background in machine learning and biomedical data processing. The ideal candidate should be proficient in Python and have experience with frameworks like PyTorch or TensorFlow. You will be responsible for developing and implementing machine learning models to analyze and interpret biomedical data. If you are passionate about advancing healthcare through technology, we would love to hear from you!', 'job_proposals': '10 to 15', 'job_tags': '["Machine Learning", "Artificial Intelligence", "Data Science", "Python", "Deep Learning"]', 'job_id': '4ea69cba3d39b6b7b5a54f573747fd37'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,471] Inserting job: job_id=b3636aec9718cef15ad9b021f1c53893, job_url=https://www.upwork.com/jobs/Guru-Stable-Job_~021924831014817013988, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 471939), 'job_title': 'AI Guru Stable Job', 'job_description': '--FULL TIME AMERICAN JOB INTERVIEW-- -- DO NOT USE AI IN ANY WAY-- Job description: You will be working with our team developing AI to replace the WP & WooCommerce sites with the latest AI tech. BID LOW to gain this full time American job. YOU MUST ANSWER THE QUESTIONS + DO NO use AI as we want to learn about you, personally. Use your best grammar and be consistent. With 20 years experience in hiring and interviewing 5,000 people, we noticed that the way a developer is writing and also the way he codes. We interview ONLY MULTINATIONALS who pays attention to details. Use proper grammar: - Start sentences with a capital letter - Names start with a capital letter - Use "I" and never "i" - Be consistent Please answer (we value honesty): 1. Can you work 7am to 4pm EST? 2. Can you work 43 hrs a week? 3. What size monitor (in inches) do you use? 4. What is your AI experience (please details) 5. What can you build with AI? 6. Links to AI agents you built. 7. Are you a company, individual, or an agency?', 'job_proposals': 'Less than 5', 'job_tags': '["AI Agent Development", "AI App Development", "AI Development"]', 'job_id': 'b3636aec9718cef15ad9b021f1c53893'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,478] Inserting job: job_id=bece5797dbf304b93d5935b81bd4f52b, job_url=https://www.upwork.com/jobs/Project-Development-and-Implementation_~021924838205009659456, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 477941), 'job_title': 'AI Project Development and Implementation', 'job_description': "We're seeking a skilled freelancer to assist with an AI project aimed at enhancing our product offerings. The ideal candidate will have experience in developing AI models, natural language processing, and machine learning techniques. You will collaborate with our team to design, test, and implement AI solutions that meet our business needs. Strong problem-solving skills and the ability to work independently are essential. If you're passionate about AI and ready to make an impact, we want to hear from you!", 'job_proposals': '50+', 'job_tags': '["Artificial Intelligence", "Python", "Machine Learning", "C++", "JavaScript"]', 'job_id': 'bece5797dbf304b93d5935b81bd4f52b'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,484] Inserting job: job_id=6daa13308183f00a8124fdaea22073d2, job_url=https://www.upwork.com/jobs/Developer-Needed-for-Boxing-Video-Analysis-MVP-Pose-Detection-Combo-Stats_~021924846332709927686, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 484381), 'job_title': 'AI Developer Needed for Boxing Video Analysis MVP (Pose Detection + Combo Stats', 'job_description': 'Job Title: AI Developer for Boxing Fight Analysis MVP – Pose & Combo Detection Job Description: We’re building an MVP for an AI-powered boxing fight analysis tool. Users will upload sparring/match videos and receive stats like punch types (jab, cross, hook), combos (e.g., jab-cross-hook), and punch frequency per round. Your Task: • Build a backend system that takes video input and outputs JSON data with punch types and timestamps • Use pose estimation (OpenPose/MediaPipe) and motion tracking to detect punches • Optional: Help connect to a simple front-end (e.g., Streamlit or Bubble) Required Skills: • Python, OpenCV • PyTorch or TensorFlow • Pose estimation (OpenPose, MediaPipe, etc.) • Video processing & action recognition How We Work: You’ll work directly with me (solo founder). I communicate via Loom, chat, and shared Google Drive folders. We’ll collaborate in phases with clear milestones and feedback. Communication: Quick async updates every few days via Upwork or Slack preferred.', 'job_proposals': '15 to 20', 'job_tags': '["Python", "Machine Learning", "Deep Learning", "Computer Vision", "open cv", "pose estimation", "Data Annotation"]', 'job_id': '6daa13308183f00a8124fdaea22073d2'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,491] Inserting job: job_id=b8fea80977429e2d193b34bbef6231b7, job_url=https://www.upwork.com/jobs/Java-Developer-Needed-for-Group-Expense-Splitter-Mobile-App_~021924851031005915918, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 491466), 'job_title': 'Java Developer Needed for Group Expense Splitter Mobile App', 'job_description': 'We are seeking a skilled Java developer to create a mobile app that facilitates expense splitting among groups of friends. The application should allow users to input expenses, track payments, and display balances in an intuitive interface. The ideal candidate will have experience in mobile application development and a strong understanding of Java programming. Experience with user-friendly design and group management features will be highly regarded. Im programming simple expense splitter app in java for my software engineering class on uni and im stuck. I need to finish the project. Its a simplecopy of already existing app called Settle Up, you and a group of friends go to a trip and want to manage your expenses so you create a team, add expenses and at the end you just split it up. Im sending you some already existing java project ive developed that needs some touches algorithmic wise and logically, i need very simple UI for IOS or Androit bc it is supposed to be an mobile app, also we are using firebase database which also isnt working the whole registration and login algorithm. I doesnt need to look pretty we just need it working as some app to be able login/register-create team-add memebers to team-add expenses/pay expenses-pay expenses by generating QR code for internet banking. Also we are Czech-Slovak team so some methods are in Slovak/Czech so be aware. At the moment it doesnt print out properly text and commands so that needs fixing too. Also if the money is insufficient and you show me some really good progress i can send you more i really need to pass this class.', 'job_proposals': '5 to 10', 'job_tags': '["Android", "Java", "Smartphone", "iOS", "Android App Development"]', 'job_id': 'b8fea80977429e2d193b34bbef6231b7'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,498] Inserting job: job_id=1786e8830d061b6b7140e6fec1ac9af8, job_url=https://www.upwork.com/jobs/Interactive-Periodontal-and-Restorative-Dental-Charting-System_~021924869028272316644, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 497377), 'job_title': 'Interactive Periodontal and Restorative Dental Charting System', 'job_description': 'The Dental Chart Interactive Application is a digital tool designed for dentists, hygienists, and periodontists to comprehensively record, visualize, and monitor a patient’s periodontal and restorative status. The application provides a user-friendly, interactive "tooth pad" interface for efficient entry of clinical findings across multiple parameters, supporting both diagnostics and treatment planning. Your task 1- You will create a dental chart thats interactive 2- Each tooth has expanded page that will allow the user to mark where the issue in the tooth ( probing, filling, crown , restoration, missing, etc)', 'job_proposals': '15 to 20', 'job_tags': '["Web Development", "Web Design", "JavaScript", "CSS", "HTML5", "Canvas"]', 'job_id': '1786e8830d061b6b7140e6fec1ac9af8'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,503] Inserting job: job_id=f664b54774d0a97415d6a392ade28e2b, job_url=https://www.upwork.com/jobs/Junior-Embedded-Systems-Engineer-Needed_~021925159957571395781, job_details={'posted_date': datetime.datetime(2025, 5, 21, 15, 12, 35, 503377), 'job_title': 'Junior Embedded Systems Engineer Needed', 'job_description': 'We are looking for a motivated Junior Embedded Systems Engineer with a BE/BTech degree in Electronics and Communication (EC) or Computer Engineering (CE). Ideal candidates will have 0-2 years of experience, including fresh graduates. The role involves hands-on work with controllers, peripherals, and modules. You will collaborate with our team to design, develop, and test embedded software solutions. If you are eager to learn and grow in a dynamic environment, we welcome your application!', 'job_proposals': '5 to 10', 'job_tags': '["Embedded System", "Electrical Engineering", "Electronics", "Embedded C", "Linux"]', 'job_id': 'f664b54774d0a97415d6a392ade28e2b'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,509] Inserting job: job_id=b833b56b61f1988937759d8861533e3f, job_url=https://www.upwork.com/jobs/LSTM-Model-Creation-Tutorial_~021924970619827616518, job_details={'posted_date': datetime.datetime(2025, 5, 21, 3, 12, 35, 509376), 'job_title': 'LSTM Model Creation Tutorial', 'job_description': 'I am seeking an experienced machine learning practitioner to guide me through the process of creating Long Short-Term Memory (LSTM) models. The ideal candidate will provide clear explanations, practical examples, and hands-on coding sessions. The goal is to develop a solid understanding of LSTM architecture and its applications in time series forecasting and sequence prediction. You should be comfortable using Python and relevant libraries like TensorFlow or Keras. If you have a passion for teaching and can simplify complex concepts, I would love to work with you!', 'job_proposals': '10 to 15', 'job_tags': '["Neural Network", "Keras", "Machine Learning", "Deep Learning", "TensorFlow"]', 'job_id': 'b833b56b61f1988937759d8861533e3f'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,514] Inserting job: job_id=ad8f996fca578e0d02ddef3c0f3dc574, job_url=https://www.upwork.com/jobs/LLM-for-commercial-team_~021924883241146706702, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 514379), 'job_title': 'LLM for commercial team', 'job_description': 'I need someone who can design an LLM to be used by my commercial team. This LLM nees to be able to respond questions such as Part-Numbers, Price, etc. The data for this LLM will come through the form of an internal excel file which will be store in the company\'s internal sharepoint. This excel file will contain information such as Part-Number, Competitor, Price for different brazilian states and regions, special price, etc. The LLM must answer questions from the commercial team such "Given [description of item], what part-number can I offer?", or, "What part-number can I offer to compete with [competitor\'s product]?" or "What is the list price and special price for [item] for [region of Brazil]?", as well as be able to give information about items currently in stock, etc.', 'job_proposals': '5 to 10', 'job_tags': '["Artificial Intelligence", "LLM Prompt", "AI Development"]', 'job_id': 'ad8f996fca578e0d02ddef3c0f3dc574'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,521] Inserting job: job_id=9f7e4128fc4153791f23350c4efa8d7d, job_url=https://www.upwork.com/jobs/Foot-Measurement-App-with-built-Scanner_~021925013659883858702, job_details={'posted_date': datetime.datetime(2025, 5, 21, 6, 12, 35, 521382), 'job_title': 'AI Foot Measurement App with built in Scanner', 'job_description': 'Project Brief: Foot Measurement App for Good Feet Arch Supports Project Name: Good Feet Arch Support Foot Measurement App Version: 1.0 Date: May 21, 2025 Prepared For: AI/App Developer Team Project Background We are excited to launch a new online store dedicated to selling Good Feet Arch Supports. To ensure our customers receive the best possible fit and experience, we need a seamless and accurate system for foot measurement. Our goal is to empower users to easily measure their own foot length, arch height, and arch length from home. With over 400 different styles of arch supports, this precise measurement will be crucial for recommending the exact product a customer needs, allowing them to confidently make a purchase online. This app is a cornerstone of our new online retail strategy, designed to replicate the personalized fitting experience of a physical store in a digital format.', 'job_proposals': '20 to 50', 'job_tags': '["Android", "iOS", "Smartphone", "Artificial Intelligence", "Mobile App Development", "Machine Learning", "Android App Development", "TensorFlow"]', 'job_id': '9f7e4128fc4153791f23350c4efa8d7d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,526] Inserting job: job_id=b6d9b5b2713b2af6a244d5d5a8b25887, job_url=https://www.upwork.com/jobs/Junior-Developer-Job-Finding_~021924840265888267014, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 526382), 'job_title': 'Junior Developer Job Finding', 'job_description': "I am looking for a remote IT job. I have recently graduated - any jobs regarding development/programming. Please apply if you believe you can help me land a job. The deliverables would be a list of such jobs - the job postings from the companies' websites. The payment will be released if I do end up landing a job with one of the companies you've sent me.", 'job_proposals': 'Less than 5', 'job_tags': '["Web Development"]', 'job_id': 'b6d9b5b2713b2af6a244d5d5a8b25887'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,532] Inserting job: job_id=6ea2cfb3eb59ea5df93e4a7235640f73, job_url=https://www.upwork.com/jobs/Arduino-Coding-for-Advanced-Algebra-and-Higher-Level-Math_~021924988508122030308, job_details={'posted_date': datetime.datetime(2025, 5, 21, 4, 12, 35, 532377), 'job_title': 'Arduino Coding for Advanced Algebra and Higher-Level Math', 'job_description': 'We are seeking an experienced developer to assist in creating Arduino code that integrates concepts from Algebra 2 Honors and higher-level mathematics. The ideal candidate should have a strong foundation in both coding with Arduino and an understanding of advanced mathematical principles. Your contributions will enhance educational projects and foster a deeper understanding of math concepts through practical applications. If you have experience in coding, educational projects, and a passion for math, we want to hear from you!', 'job_proposals': '5 to 10', 'job_tags': '["Mathematics", "Algebra", "Calculus", "Algorithm Development", "Mathematics Tutoring", "Computer Science"]', 'job_id': '6ea2cfb3eb59ea5df93e4a7235640f73'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,537] Inserting job: job_id=2f8b5d43756dc791471bdd2d71b95623, job_url=https://www.upwork.com/jobs/Developer-for-PDF-Text-Extraction-Library_~021925175805499400266, job_details={'posted_date': datetime.datetime(2025, 5, 21, 16, 12, 35, 536376), 'job_title': 'C++ Developer for PDF Text Extraction Library', 'job_description': "Job Title: C/C++ Developer Needed to Build Lightweight PDF Text Extraction Library Job Description: We are seeking an experienced C or C++ developer to build a lightweight, high-performance library focused solely on extracting plain text from PDF files. Unlike many full-featured PDF libraries, this project intentionally avoids unnecessary functionality — we want a compact and efficient solution purpose-built for our use case that is well documented and easily maintainable. Key Requirements: The library should be capable of the following: - File Input: Open a PDF file using its filepath and return a streamable resource. - Full Text Read: Provide a method to read all plain text from the streamable resource and return a pointer to the current position. - Partial Text Read: Support reading a chunk of text based on a pointer within the streamable resource. Ideal Candidate: - Proven experience with C or C++ development - Deep understanding of PDF file internals and text extraction strategies - Ability to design clean, modular, and performant code - Capable of delivering minimal external dependencies and a well-documented API If you have experience building custom libraries or tools for file parsing and you're passionate about clean, efficient solutions, we'd love to hear from you. Please include examples of relevant work or projects in your proposal.", 'job_proposals': '5 to 10', 'job_tags': '["C++", "Desktop Application", "C"]', 'job_id': '2f8b5d43756dc791471bdd2d71b95623'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,542] Inserting job: job_id=aedaea0c8548d296fd402d5037b3a260, job_url=https://www.upwork.com/jobs/Interview-Agent-Development_~021924914399309916942, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 542388), 'job_title': 'AI Interview Agent Development', 'job_description': 'We are seeking a skilled developer to create an AI-driven interview agent that can conduct virtual interviews with candidates. This agent should be capable of understanding natural language, asking relevant questions, and providing feedback. The ideal candidate will have experience with natural language processing (NLP), machine learning, and AI development. Your expertise will play a crucial role in delivering a user-friendly and efficient interview solution. If you are passionate about AI and have a proven track record in similar projects, we would love to hear from you.', 'job_proposals': '', 'job_tags': '["Artificial Intelligence", "English", "Machine Learning", "Python", "Sales"]', 'job_id': 'aedaea0c8548d296fd402d5037b3a260'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,547] Inserting job: job_id=58b2b6255192491ee667849c56879f18, job_url=https://www.upwork.com/jobs/USD-Register-URL-Contemporary-Web-Design-com_~021924987666895642852, job_details={'posted_date': datetime.datetime(2025, 5, 21, 5, 12, 35, 547385), 'job_title': "USD 40 -- Register a URL of 'Contemporary-Web-Design.com'", 'job_description': "USD 40 -- Register a URL of 'Contemporary-Web-Design.com' for one year on Dynadot.com, ensure email is enabled * ALL files are YOUR_FIRST_NAME_YOUR_LAST_NAME_2025_05_12_DESCRIPTION_A.XXX * Example: ANDREW_BLENCOWE_2025_05_11_UPDATED_FULL_TREE_A.ZIP * Failure to send all files lacking your full name in upper case will have you banned for life * Never use AI * Do not ask for 'a quick chat' * Do not ask for 'a quick Zoom call' * Accept offer now * Deadline is 20 minutes from reading this, if it take you longer you are too junior Send full credentials including current password in Word file", 'job_proposals': '5 to 10', 'job_tags': '["HTML"]', 'job_id': '58b2b6255192491ee667849c56879f18'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,551] Inserting job: job_id=cfa79b104352413052f3e8504c002546, job_url=https://www.upwork.com/jobs/CUDA-Developer-Needed-Complete-MLP-Neural-Network-Implementation_~021924935300058095845, job_details={'posted_date': datetime.datetime(2025, 5, 21, 0, 12, 35, 551384), 'job_title': 'CUDA Developer Needed to Complete MLP Neural Network Implementation', 'job_description': 'We are looking for a C++/CUDA developer with an understanding of neural networks and GPU programming. Your task is to complete the implementation of a simple Multilayer Perceptron (MLP) model using CUDA. This project involves kernel-level work on matrix operations and neural network layers.', 'job_proposals': '10 to 15', 'job_tags': '["C++", "Neural Network", "CUDA"]', 'job_id': 'cfa79b104352413052f3e8504c002546'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,556] Inserting job: job_id=21ad1d7fa9ca038f401bea4983472328, job_url=https://www.upwork.com/jobs/Programming-for-Chemistry-Experiment-Report-Feedback_~021925031524109870048, job_details={'posted_date': datetime.datetime(2025, 5, 21, 7, 12, 35, 556920), 'job_title': 'AI Programming for Chemistry Experiment Report Feedback', 'job_description': 'We are seeking an experienced AI developer to create a program that provides automated feedback on student Chemistry experiment reports. The ideal candidate will have a deep understanding of educational tools and be able to design an AI system that evaluates scientific writing and offers constructive feedback. I want my AI to give feedback on student Chemistry experiment reports. I have marked examples of students. I have very specific binary Student criteria descriptions for it to follow, (0/1) I want the AI to use this criteria solely to mark them. I want the AI to be able to make its own translation of my criteria, so that it can keep updating its own AI specific criteria description language, thereby fully understanding what I want. I want the AI to justify its (0/1) criteria using logical and accurate chemistry. I need to be able to teach the AI when it makes mistakes or eventually to persuade me that I am wrong. I want the AI to quote a section of the students text which shows the location at which point the criteria was either given or denied. Previous attempts just using website AI such and others failed, primarily because it was either unable to understand the chemistry, forgot information or files mid-way through the process or often was inconsistent with its output. (Full script of Chat gpt 4.0 conversation available that I can share). This involved often renaming columns, not doing what we had previously established, simplifying answers, etc. If the final solution is inaccurate in understanding the chemistry I can not trust it 100%. If the final solution is inconsistent in its application of the binary criteria after the learning process then I can not trust it 100%. If I can not trust the final solution 100%, then I will have to read the entire report myself and the solution will have zero value. It is a very binary outcome. It will be usable or useless. I will provide the following files: [More example students can be provided if necessary for further learning] COMPARISON ALAYNA+SUNGYUN.xls [This file is for the AI learning process] STUDENT SUNGYUN 2025.doc [Student 1 Chemistry report] STUDENT ALAYNA 2025.doc [Student 2 Chemistry report] FINAL OUTPUT.xls [What the student feedback file going to the student should look like]', 'job_proposals': 'Less than 5', 'job_tags': '["Data Analysis", "Chemistry", "Artificial Intelligence", "Technical Writing", "Writing"]', 'job_id': '21ad1d7fa9ca038f401bea4983472328'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,561] Inserting job: job_id=e7912d265a1b289f633aca08bf99eb45, job_url=https://www.upwork.com/jobs/Aspiring-Web-Development-and-Cybersecurity-Learner-Needed_~021925091113096899342, job_details={'posted_date': datetime.datetime(2025, 5, 21, 11, 12, 35, 561919), 'job_title': 'Aspiring Web Development and Cybersecurity Learner Needed', 'job_description': 'We are seeking a motivated individual eager to learn and grow in the fields of web development and cybersecurity. As you continue your education, you will assist in various projects, apply coding skills, and gain hands-on experience in a supportive environment. Ideal candidates should have a passion for technology and a willingness to tackle new challenges. This is a great opportunity to build your portfolio while learning from experienced professionals.', 'job_proposals': '20 to 50', 'job_tags': '["WordPress", "Web Development", "Web Design", "Graphic Design", "Content Writing"]', 'job_id': 'e7912d265a1b289f633aca08bf99eb45'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,567] Inserting job: job_id=313df416f6b6a7d5105770634bc2879e, job_url=https://www.upwork.com/jobs/Freelance-Software-Engineer-for-Educational-App-Development_~021924932083858504454, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 566913), 'job_title': 'Freelance Software Engineer for Educational App Development', 'job_description': 'We are seeking a talented software engineer to join our team in developing an innovative educational software application. The ideal candidate will have experience in creating user-friendly interfaces and integrating educational content. You will collaborate with our design and content teams to deliver a dynamic learning experience. A passion for education and technology is a must! If you have a strong portfolio and are ready to make an impact, we would love to hear from you.', 'job_proposals': '', 'job_tags': '["Android", "Smartphone", "iOS", "JavaScript", "Java"]', 'job_id': '313df416f6b6a7d5105770634bc2879e'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,572] Inserting job: job_id=5d9b1c04cab39e38f6d03e93bb5a4e8d, job_url=https://www.upwork.com/jobs/Developer-for-Laser-Hardware-Project_~021924984814599889888, job_details={'posted_date': datetime.datetime(2025, 5, 21, 4, 12, 35, 572868), 'job_title': 'C++/Qt Developer for Laser Hardware Project', 'job_description': 'Requirements: Develop cross-platform apps using C++/Qt (desktop & mobile) Interface with laser hardware and protocols (e.g. MIDI, audio/video decoding, low-level network protocols) Optimize algorithms for performance and low latency Experience with hardware control OpenCV or image processing is a big plus Knowledge of working with multi threaded applications, mutexes ArtNet, DMX and other big show protocols is a plus also', 'job_proposals': '50+', 'job_tags': '["C++", "Qt Framework"]', 'job_id': '5d9b1c04cab39e38f6d03e93bb5a4e8d'}
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:12:35,577] Inserting job: job_id=d4bdac94674eb9d89367626ca839ed50, job_url=https://www.upwork.com/jobs/Expert-Developer-Full-Stack_~021924896604043836167, job_details={'posted_date': datetime.datetime(2025, 5, 20, 17, 12, 35, 577865), 'job_title': 'Expert Developer Full Stack', 'job_description': 'Need some assistance on miscellaneous tasks. I will provide details on the tasks.', 'job_proposals': 'Help Center', 'job_tags': '["JavaScript", "API", "Web Development", "Rating is 5.0 out of 5.", "$3K+ spent", "  USA", "Proposals: 20 to 50", "Youssef K.", "Web Development | Artificial Intelligence, C#, C++, CSS, CSS 3, Git", "Complete your profile", "100%", "Promote with ads", "Availability badge", "Off", "Edit availability badge", "Boost your profile", "Off", "Edit boost your profile", "Connects: 0", "Buy Connects", "View details", "|", "Free Connects", "Preferences"]', 'job_id': 'd4bdac94674eb9d89367626ca839ed50'}
+[INFO. scrapers.upwork, (line #198) - 2025-05-21 17:12:35,583] Closing browser...
+[INFO. scrapers.upwork, (line #207) - 2025-05-21 17:12:36,175] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 17:14:56,148] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 17:14:56,148] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 17:15:00,039] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 17:15:00,981] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 17:15:25,995] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 17:15:26,015] Submitting username
+[ERROR. scrapers.upwork, (line #204) - 2025-05-21 17:15:56,324] Message: 
+Stacktrace:
+	GetHandleVerifier [0x0110FC83+61635]
+	GetHandleVerifier [0x0110FCC4+61700]
+	(No symbol) [0x00F305D3]
+	(No symbol) [0x00F7899E]
+	(No symbol) [0x00F78D3B]
+	(No symbol) [0x00FC0E12]
+	(No symbol) [0x00F9D2E4]
+	(No symbol) [0x00FBE61B]
+	(No symbol) [0x00F9D096]
+	(No symbol) [0x00F6C840]
+	(No symbol) [0x00F6D6A4]
+	GetHandleVerifier [0x013945A3+2701795]
+	GetHandleVerifier [0x0138FD26+2683238]
+	GetHandleVerifier [0x013AAA6E+2793134]
+	GetHandleVerifier [0x01126945+155013]
+	GetHandleVerifier [0x0112D02D+181357]
+	GetHandleVerifier [0x011174D8+92440]
+	GetHandleVerifier [0x01117680+92864]
+	GetHandleVerifier [0x01102070+5296]
+	BaseThreadInitThunk [0x75265D49+25]
+	RtlInitializeExceptionChain [0x7780D03B+107]
+	RtlGetAppContainerNamedObjectPath [0x7780CFC1+561]
+
+[INFO. scrapers.upwork, (line #207) - 2025-05-21 17:15:56,324] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #78) - 2025-05-21 17:39:21,642] Launching driver
+[INFO. scrapers.upwork, (line #51) - 2025-05-21 17:39:21,643] Attempt #1/3
+[INFO. scrapers.upwork, (line #84) - 2025-05-21 17:39:25,753] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 17:39:33,595] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #89) - 2025-05-21 17:39:58,597] Switching to main window
+[INFO. scrapers.upwork, (line #93) - 2025-05-21 17:39:58,636] Submitting username
+[INFO. scrapers.upwork, (line #112) - 2025-05-21 17:39:59,020] Submitting password
+[INFO. scrapers.upwork, (line #131) - 2025-05-21 17:39:59,815] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #135) - 2025-05-21 17:40:09,815] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #140) - 2025-05-21 17:40:22,740] Scrolling down page
+[INFO. scrapers.upwork, (line #149) - 2025-05-21 17:40:47,828] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #174) - 2025-05-21 17:40:50,839] Database file absolute path: c:\Semester 6\IR\Projects\jobs.db
+[DEBUG. scrapers.upwork, (line #179) - 2025-05-21 17:40:50,840] Inserting job: job_id=74492ccad978ad15bda0a866e8aa2e04, job_url=https://www.upwork.com/jobs/Arabic-Language-Interview-questions-Peer-review_~021925098762565280736, job_details={'posted_date': datetime.datetime(2025, 5, 21, 11, 40, 50, 840742), 'job_title': 'Arabic Language Interview questions- Peer review', 'job_description': 'Looking for Arabic Language Subject Matter Expert (SME) Requirements: • Proficient in spoken and written Arabic • Familiar with interview processes and professional communication • Ability to understand and respond to AI-generated interview questions in Arabic • Comfortable speaking in front of a camera (responses will be recorded) Expected Work: • Participate as a candidate in simulated AI-driven interviews • Listen and respond to questions asked by the AI bot in Arabic • Provide feedback on language accuracy, cultural appropriateness, and clarity • Help test and validate the Arabic support feature in the AI Interview tool We pay 5$ per interview question. There will be around 7-8 interview questions, all verbal. SME should be able to give very detailed feedback also on every aspect of the process. Interview will typically take 5-10 minutes only, but per interview cost is high so that SME need share detailed feedback on every aspect of the interview', 'job_proposals': '20 to 50', 'job_tags': '["Arabic"]', 'job_id': '74492ccad978ad15bda0a866e8aa2e04'}
+[ERROR. scrapers.upwork, (line #204) - 2025-05-21 17:40:50,841] table jobs has no column named job_id
+[INFO. scrapers.upwork, (line #207) - 2025-05-21 17:40:50,842] Finished UpworkScraper
+[INFO. scrapers.upwork, (line #75) - 2025-05-21 17:47:19,150] Launching driver
+[INFO. scrapers.upwork, (line #52) - 2025-05-21 17:47:19,150] Attempt #1/3
+[INFO. scrapers.upwork, (line #81) - 2025-05-21 17:47:23,066] Navigating to `https://www.upwork.com/ab/account-security/login`
+[INFO. scrapers.upwork, (line #83) - 2025-05-21 17:47:30,057] Pausing for windows to fully load
+[INFO. scrapers.upwork, (line #86) - 2025-05-21 17:47:55,064] Switching to main window
+[INFO. scrapers.upwork, (line #90) - 2025-05-21 17:47:55,089] Submitting username
+[INFO. scrapers.upwork, (line #109) - 2025-05-21 17:47:55,426] Submitting password
+[INFO. scrapers.upwork, (line #128) - 2025-05-21 17:47:56,236] Pausing for 10 seconds for credentials verification
+[INFO. scrapers.upwork, (line #132) - 2025-05-21 17:48:06,238] Redirecting to Best Matches
+[INFO. scrapers.upwork, (line #137) - 2025-05-21 17:48:19,187] Scrolling down page
+[INFO. scrapers.upwork, (line #146) - 2025-05-21 17:48:44,331] Waiting for element to load (max timeout set to 300 seconds)...
+[INFO. scrapers.upwork, (line #170) - 2025-05-21 17:48:47,423] Adding jobs to database: jobs.db
+[INFO. scrapers.upwork, (line #190) - 2025-05-21 17:48:47,580] Added 30 jobs to the database
+[INFO. scrapers.upwork, (line #193) - 2025-05-21 17:48:47,581] Closing browser...
+[INFO. scrapers.upwork, (line #202) - 2025-05-21 17:48:48,124] Finished UpworkScraper
