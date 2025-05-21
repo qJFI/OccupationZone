@@ -19,7 +19,7 @@ setup_logging()
 def run_scraper(scraper_class, query, db_name):
     storage = DataStorage(output_format='sqlite', db_name=db_name)
     scraper = scraper_class(storage, query=query)
-    scraper.scrape(max_pages=1)
+    scraper.scrape(max_pages=5)
     # Optionally, call storage.save() if needed (it just logs for sqlite)
     del storage  # Ensure connection is closed
     return scraper_class.__name__  # For logging
