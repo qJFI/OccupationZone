@@ -1,7 +1,7 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{tcolorbox}
@@ -34,22 +34,34 @@
 
 \lstset{style=mystyle}
 
-\title{OccupationZone: Job Application Management System\\
-\large Technical Documentation}
-\author{Information Retrieval Project}
-\date{\today}
-
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+\begin{center}
+\vspace*{2cm}
+
+{\huge\bfseries WorkZone: Job Application\\[0.5cm]Management System\\[2cm]}
+
+{\Large Technical Documentation\\[2cm]}
+
+{\large Information Retrieval Project\\[1cm]}
+
+{\large May 22, 2025}
+
+\vfill
+\end{center}
+\end{titlepage}
+
+\newpage
 \tableofcontents
+\newpage
 
-\chapter{Introduction}
+\section{Introduction}
 
-\section{Project Overview}
-OccupationZone is a comprehensive job application management system designed to streamline the job search and application process. It integrates web scraping, data management, and application automation into a cohesive platform. This document details the system's architecture, implementation choices, and core functionality.
+\subsection{Project Overview}
+WorkZone is a comprehensive job application management system designed to streamline the job search and application process. It integrates web scraping, data management, and application automation into a cohesive platform. This document details the system's architecture, implementation choices, and core functionality.
 
-\section{Motivation}
+\subsection{Motivation}
 The job application process often involves:
 \begin{itemize}
     \item Searching across multiple job platforms
@@ -58,11 +70,11 @@ The job application process often involves:
     \item Managing resume versions
 \end{itemize}
 
-We developed OccupationZone to address these pain points by automating and centralizing the entire process, providing a single interface for managing all job search activities.
+We developed WorkZone to address these pain points by automating and centralizing the entire process, providing a single interface for managing all job search activities.
 
-\chapter{System Architecture}
+\section{System Architecture}
 
-\section{Component Overview}
+\subsection{Component Overview}
 The system is built around five core components:
 
 \begin{tcolorbox}[colback=backcolour,title=System Components]
@@ -75,7 +87,7 @@ The system is built around five core components:
 \end{enumerate}
 \end{tcolorbox}
 
-\section{Data Flow}
+\subsection{Data Flow}
 \begin{enumerate}
     \item Web scrapers collect job listings from multiple sources
     \item Jobs are stored in a centralized SQLite database
@@ -84,12 +96,12 @@ The system is built around five core components:
     \item The automation engine applies to selected jobs with user credentials
 \end{enumerate}
 
-\chapter{Implementation Details}
+\section{Implementation Details}
 
-\section{Web Scrapers}
+\subsection{Web Scrapers}
 We implemented specialized scrapers for seven different job platforms, each tailored to the specific HTML structure and data patterns of its target site.
 
-\subsection{Design Choices}
+\subsubsection{Design Choices}
 We chose to implement individual scraper classes for each platform to maximize flexibility and maintainability:
 
 \begin{lstlisting}[language=Python, caption=Scraper Class Structure]
@@ -107,7 +119,7 @@ scraper_classes = [
 
 Each scraper implements a common interface with a \texttt{scrape()} method, allowing for consistent integration with the main crawler.
 
-\subsection{Concurrent Execution}
+\subsubsection{Concurrent Execution}
 To optimize data collection, we implemented concurrent scraping using Python's \texttt{ThreadPoolExecutor}:
 
 \begin{lstlisting}[language=Python, caption=Concurrent Scraping Implementation]
@@ -131,7 +143,7 @@ This approach offers several advantages:
     \item Error handling isolates failures to individual scrapers
 \end{itemize}
 
-\subsection{Platform-Specific Implementations}
+\subsubsection{Platform-Specific Implementations}
 Each scraper is tailored to its target platform. For example, the LinkedIn scraper handles authentication, pagination, and job extraction specific to LinkedIn's structure:
 
 \begin{lstlisting}[language=Python, caption=LinkedIn Scraper (Excerpt)]
@@ -147,9 +159,9 @@ class LinkedInScraper:
         # ...
 \end{lstlisting}
 
-\section{Data Management}
+\subsection{Data Management}
 
-\subsection{Job Model}
+\subsubsection{Job Model}
 We created a standardized \texttt{Job} class to normalize data across platforms:
 
 \begin{lstlisting}[language=Python, caption=Job Data Model]
@@ -175,7 +187,7 @@ Key design decisions:
     \item Common fields across all job platforms
 \end{itemize}
 
-\subsection{Data Storage}
+\subsubsection{Data Storage}
 We chose SQLite for data persistence due to its simplicity, portability, and performance:
 
 \begin{lstlisting}[language=Python, caption=DataStorage Implementation]
@@ -197,7 +209,7 @@ The \texttt{DataStorage} class provides an abstraction layer over the database o
     \item Support for multiple output formats (CSV, JSON)
 \end{itemize}
 
-\subsection{Deduplication}
+\subsubsection{Deduplication}
 To prevent duplicate job listings, we implemented a deduplication utility:
 
 \begin{lstlisting}[language=Python, caption=Deduplication Implementation]
@@ -216,9 +228,9 @@ def deduplicate_jobs(conn):
 
 This SQL query efficiently removes duplicates while keeping the earliest record (by rowid) for each unique job link.
 
-\section{Automation Engine}
+\subsection{Automation Engine}
 
-\subsection{Platform-Specific Appliers}
+\subsubsection{Platform-Specific Appliers}
 We developed automation modules for three major platforms:
 \begin{itemize}
     \item LinkedIn
@@ -243,7 +255,7 @@ def apply_to_job(job, resume_path, labels, credentials):
     # ...
 \end{lstlisting}
 
-\subsection{Automation Techniques}
+\subsubsection{Automation Techniques}
 The automation modules use Selenium WebDriver to interact with job platforms:
 \begin{itemize}
     \item Automated form filling
@@ -272,9 +284,9 @@ def apply_to_linkedin_job(job_url, resume_path, labels, email, password):
         driver.quit()
 \end{lstlisting}
 
-\section{User Interface}
+\subsection{User Interface}
 
-\subsection{Framework Selection}
+\subsubsection{Framework Selection}
 We chose Streamlit for the user interface due to its:
 \begin{itemize}
     \item Rapid development capabilities
@@ -283,7 +295,7 @@ We chose Streamlit for the user interface due to its:
     \item Minimal frontend code requirements
 \end{itemize}
 
-\subsection{Main Application Structure}
+\subsubsection{Main Application Structure}
 The main application provides navigation and authentication:
 
 \begin{lstlisting}[language=Python, caption=Main Streamlit Application]
@@ -319,7 +331,7 @@ if selected == "Job Search":
 # ... other pages ...
 \end{lstlisting}
 
-\subsection{Advanced Search Implementation}
+\subsubsection{Advanced Search Implementation}
 We implemented an advanced search interface with multiple filtering options:
 
 \begin{lstlisting}[language=Python, caption=Advanced Search Implementation]
@@ -349,7 +361,7 @@ with st.expander("Advanced Search Options", expanded=True):
     )
 \end{lstlisting}
 
-\subsection{Resume Management}
+\subsubsection{Resume Management}
 The resume manager page enables:
 \begin{itemize}
     \item PDF/DOCX resume upload
@@ -387,9 +399,9 @@ def resume_manager_page():
     category_tabs = st.tabs(list(categories.keys()))
 \end{lstlisting}
 
-\chapter{Technical Challenges and Solutions}
+\section{Technical Challenges and Solutions}
 
-\section{Challenge: Concurrent Database Access}
+\subsection{Challenge: Concurrent Database Access}
 \textbf{Problem:} Multiple scrapers attempting to write to the same database simultaneously caused connection conflicts.
 
 \textbf{Solution:} We implemented a separate database connection for each scraper thread:
@@ -404,7 +416,7 @@ def run_scraper(scraper_class, query, db_name):
     return scraper_class.__name__
 \end{lstlisting}
 
-\section{Challenge: Duplicate Job Listings}
+\subsection{Challenge: Duplicate Job Listings}
 \textbf{Problem:} The same job might appear on multiple platforms or in multiple search results.
 
 \textbf{Solution:} We implemented SQL-based deduplication using the job URL as the unique identifier:
@@ -418,7 +430,7 @@ WHERE rowid NOT IN (
 )
 \end{lstlisting}
 
-\section{Challenge: Widget Key Conflicts in Streamlit}
+\subsection{Challenge: Widget Key Conflicts in Streamlit}
 \textbf{Problem:} Multiple identical widgets caused `DuplicateWidgetID` errors in the UI.
 
 \textbf{Solution:} We implemented dynamic key generation for all widgets:
@@ -436,7 +448,7 @@ unique_id = str(uuid.uuid4())
 st.button("Apply Now", key=f"apply_{row['id']}_{idx}_{unique_id}")
 \end{lstlisting}
 
-\section{Challenge: Date Parsing in Timestamp Filtering}
+\subsection{Challenge: Date Parsing in Timestamp Filtering}
 \textbf{Problem:} Inconsistent timestamp formats caused parsing errors.
 
 \textbf{Solution:} We implemented robust timestamp parsing:
@@ -447,10 +459,10 @@ parsed_timestamps = pd.to_datetime(df["timestamp"],
                                  format='mixed')
 \end{lstlisting}
 
-\chapter{Conclusion and Future Work}
+\section{Conclusion and Future Work}
 
-\section{Achievements}
-The OccupationZone system successfully:
+\subsection{Achievements}
+The WorkZone system successfully:
 \begin{itemize}
     \item Integrates job data from seven major platforms
     \item Provides advanced search and filtering capabilities
@@ -459,7 +471,7 @@ The OccupationZone system successfully:
     \item Centralizes job application tracking
 \end{itemize}
 
-\section{Future Enhancements}
+\subsection{Future Enhancements}
 Potential future developments include:
 \begin{itemize}
     \item Machine learning for job matching and recommendations
@@ -469,7 +481,7 @@ Potential future developments include:
     \item Interview scheduling and preparation tools
 \end{itemize}
 
-\section{Lessons Learned}
+\subsection{Lessons Learned}
 This project reinforced several key principles:
 \begin{itemize}
     \item The importance of modular design for system extensibility

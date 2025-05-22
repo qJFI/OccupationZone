@@ -1,0 +1,37 @@
+# LaTeX auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.ptc
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.fdb_latexmk
+
+# LaTeX Beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# BibTeX
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Keep source files and final PDFs
+!*.tex
+!*.pdf 
