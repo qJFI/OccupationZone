@@ -3,6 +3,8 @@ import os
 import uuid
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from job_applier import apply_to_job
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from utils.job_filters import create_filter_ui, apply_filters
 
 import streamlit as st
 import sqlite3
@@ -29,10 +31,20 @@ def applications_page():
     conn = sqlite3.connect("jobs.db")
 
     # Load jobs
-    jobs_df = pd.read_sql_query("SELECT id, title, company, location, link, source FROM jobs ORDER BY timestamp DESC", conn)
+    jobs_df = pd.read_sql_query("SELECT id, title, company, location, link, source, timestamp, description FROM jobs ORDER BY timestamp DESC", conn)
     if jobs_df.empty:
         st.info("No jobs found in the database.")
         return
+
+    # Add filtering capabilities
+    st.subheader("Filter Jobs")
+    filters = create_filter_ui(jobs_df)
+    
+    # Apply filters
+    filtered_df = apply_filters(jobs_df, filters)
+    
+    # Show filter results
+    st.write(f"{len(filtered_df)} jobs match your filters.")
 
     # Load resumes
     resumes = get_resumes(conn, user)
@@ -40,17 +52,17 @@ def applications_page():
         st.warning("Please upload a resume in the Resume Manager first.")
         return
 
-    # Job selection
+    # Job selection - now with filtered jobs
     st.subheader("Select Jobs to Apply To")
-    jobs_df['select'] = False
+    filtered_df['select'] = False
     selected = st.data_editor(
-        jobs_df[['select', 'title', 'company', 'location', 'source', 'link']],
+        filtered_df[['select', 'title', 'company', 'location', 'source', 'link']],
         use_container_width=True,
         column_config={"select": st.column_config.CheckboxColumn("Apply?")},
         disabled=["title", "company", "location", "source", "link"],
         key="job_applications_data_editor"
     )
-    selected_jobs = jobs_df[selected['select']]
+    selected_jobs = filtered_df[selected['select']]
 
     # Resume selection
     st.subheader("Select Resume/Info Set")

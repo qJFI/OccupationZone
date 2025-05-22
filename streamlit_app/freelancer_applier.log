@@ -1,0 +1,120 @@
+2025-05-22 05:53:23,341 - INFO - Starting application process for https://www.freelancer.com/projects/android/android-app-development-for-yuli
+2025-05-22 05:53:35,474 - ERROR - General exception: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6CDEECF45+75717]
+	GetHandleVerifier [0x00007FF6CDEECFA0+75808]
+	(No symbol) [0x00007FF6CDCB8F9A]
+	(No symbol) [0x00007FF6CDCA4E35]
+	(No symbol) [0x00007FF6CDCC9DB4]
+	(No symbol) [0x00007FF6CDD3EE75]
+	(No symbol) [0x00007FF6CDD5ECC2]
+	(No symbol) [0x00007FF6CDD37153]
+	(No symbol) [0x00007FF6CDD00421]
+	(No symbol) [0x00007FF6CDD011B3]
+	GetHandleVerifier [0x00007FF6CE1ED71D+3223453]
+	GetHandleVerifier [0x00007FF6CE1E7CC2+3200322]
+	GetHandleVerifier [0x00007FF6CE205AF3+3322739]
+	GetHandleVerifier [0x00007FF6CDF06A1A+180890]
+	GetHandleVerifier [0x00007FF6CDF0E11F+211359]
+	GetHandleVerifier [0x00007FF6CDEF5294+109332]
+	GetHandleVerifier [0x00007FF6CDEF5442+109762]
+	GetHandleVerifier [0x00007FF6CDEDBA59+4825]
+	BaseThreadInitThunk [0x00007FF8306AE8D7+23]
+	RtlUserThreadStart [0x00007FF8311FC5DC+44]
+
+2025-05-22 05:53:39,526 - INFO - Starting application process for https://www.freelancer.com/projects/android/android-app-development-for-yuli
+2025-05-22 05:53:42,562 - INFO - Driver closed
+2025-05-22 05:53:51,922 - INFO - Login page title: Login to Hire Freelancers & Find Work | Freelancer
+2025-05-22 05:53:52,289 - INFO - Submitted login form
+2025-05-22 05:54:07,555 - INFO - After login URL: https://www.freelancer.com/dashboard
+2025-05-22 05:54:29,560 - INFO - Job page title: Android App Development for Yuli | Freelancer
+2025-05-22 05:54:45,026 - INFO - Looking for Place Bid button (specific XPath)
+2025-05-22 05:54:47,430 - INFO - Clicked Place Bid button (specific XPath)
+2025-05-22 05:54:57,665 - INFO - Looking for bid amount field
+2025-05-22 05:55:20,993 - WARNING - Bid amount field not found
+2025-05-22 05:55:21,006 - WARNING - Period field not found
+2025-05-22 05:55:21,006 - INFO - Looking for description textarea
+2025-05-22 05:55:29,018 - INFO - Scrolling to ensure all form elements are visible
+2025-05-22 05:55:37,261 - INFO - Saved screenshot before description field search
+2025-05-22 05:55:37,261 - INFO - Trying to find description field using exact attributes
+2025-05-22 05:55:37,280 - ERROR - Failed with exact attributes: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//textarea[@class='TextArea' and contains(@class, 'ng-trigger-shakeAnimation') and @placeholder='What makes you the best candidate for this project?']"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6CDEECF45+75717]
+	GetHandleVerifier [0x00007FF6CDEECFA0+75808]
+	(No symbol) [0x00007FF6CDCB8F9A]
+	(No symbol) [0x00007FF6CDD0F4C6]
+	(No symbol) [0x00007FF6CDD0F77C]
+	(No symbol) [0x00007FF6CDD62577]
+	(No symbol) [0x00007FF6CDD373BF]
+	(No symbol) [0x00007FF6CDD5F39C]
+	(No symbol) [0x00007FF6CDD37153]
+	(No symbol) [0x00007FF6CDD00421]
+	(No symbol) [0x00007FF6CDD011B3]
+	GetHandleVerifier [0x00007FF6CE1ED71D+3223453]
+	GetHandleVerifier [0x00007FF6CE1E7CC2+3200322]
+	GetHandleVerifier [0x00007FF6CE205AF3+3322739]
+	GetHandleVerifier [0x00007FF6CDF06A1A+180890]
+	GetHandleVerifier [0x00007FF6CDF0E11F+211359]
+	GetHandleVerifier [0x00007FF6CDEF5294+109332]
+	GetHandleVerifier [0x00007FF6CDEF5442+109762]
+	GetHandleVerifier [0x00007FF6CDEDBA59+4825]
+	BaseThreadInitThunk [0x00007FF8306AE8D7+23]
+	RtlUserThreadStart [0x00007FF8311FC5DC+44]
+
+2025-05-22 05:55:37,280 - INFO - Trying to find description field by ID
+2025-05-22 05:55:40,965 - INFO - Found and filled description field by ID
+2025-05-22 05:55:40,965 - INFO - Description field successfully filled
+2025-05-22 05:55:40,965 - INFO - Scrolling to the end of the page before submitting
+2025-05-22 05:55:46,161 - INFO - Saved screenshot before Place Bid button search
+2025-05-22 05:55:46,162 - INFO - Looking for Place Bid button
+2025-05-22 05:55:52,244 - INFO - Attempting to locate Place Bid button using multiple selectors
+2025-05-22 05:55:54,433 - INFO - Clicked Place Bid button using selector: //fl-button[@fltrackinglabel='PlaceBidButton']//button[contains(normalize-space(.), 'Place Bid')]
+2025-05-22 05:55:54,643 - INFO - Saved screenshot after Place Bid attempt
+2025-05-22 05:56:09,684 - INFO - Current URL after place bid attempt: https://www.freelancer.com/projects/android/Android-App-Development-for-Yuli/proposals?bidCreated=true
+2025-05-22 05:56:09,684 - INFO - Bid placed successfully
+2025-05-22 05:56:17,319 - INFO - Driver closed
+2025-05-22 06:01:07,483 - INFO - Starting application process for https://www.freelancer.com/projects/microsoft-access/microsoft-access-database-updater
+2025-05-22 06:01:14,077 - INFO - Submitted login form
+2025-05-22 06:01:30,213 - INFO - Looking for Place Bid button (specific XPath)
+2025-05-22 06:01:31,399 - INFO - Clicked Place Bid button (specific XPath)
+2025-05-22 06:01:33,403 - INFO - Looking for bid amount field
+2025-05-22 06:01:45,921 - WARNING - Bid amount field not found
+2025-05-22 06:01:45,941 - WARNING - Period field not found
+2025-05-22 06:01:45,941 - INFO - Looking for description textarea
+2025-05-22 06:01:47,950 - INFO - Trying to find description field using exact attributes
+2025-05-22 06:01:47,963 - ERROR - Failed with exact attributes: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//textarea[@class='TextArea' and contains(@class, 'ng-trigger-shakeAnimation') and @placeholder='What makes you the best candidate for this project?']"}
+  (Session info: chrome=136.0.7103.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6CDEECF45+75717]
+	GetHandleVerifier [0x00007FF6CDEECFA0+75808]
+	(No symbol) [0x00007FF6CDCB8F9A]
+	(No symbol) [0x00007FF6CDD0F4C6]
+	(No symbol) [0x00007FF6CDD0F77C]
+	(No symbol) [0x00007FF6CDD62577]
+	(No symbol) [0x00007FF6CDD373BF]
+	(No symbol) [0x00007FF6CDD5F39C]
+	(No symbol) [0x00007FF6CDD37153]
+	(No symbol) [0x00007FF6CDD00421]
+	(No symbol) [0x00007FF6CDD011B3]
+	GetHandleVerifier [0x00007FF6CE1ED71D+3223453]
+	GetHandleVerifier [0x00007FF6CE1E7CC2+3200322]
+	GetHandleVerifier [0x00007FF6CE205AF3+3322739]
+	GetHandleVerifier [0x00007FF6CDF06A1A+180890]
+	GetHandleVerifier [0x00007FF6CDF0E11F+211359]
+	GetHandleVerifier [0x00007FF6CDEF5294+109332]
+	GetHandleVerifier [0x00007FF6CDEF5442+109762]
+	GetHandleVerifier [0x00007FF6CDEDBA59+4825]
+	BaseThreadInitThunk [0x00007FF8306AE8D7+23]
+	RtlUserThreadStart [0x00007FF8311FC5DC+44]
+
+2025-05-22 06:01:47,963 - INFO - Trying to find description field by ID
+2025-05-22 06:01:51,609 - INFO - Found and filled description field by ID
+2025-05-22 06:01:51,610 - INFO - Description field successfully filled
+2025-05-22 06:01:51,610 - INFO - Scrolling to the end of the page before submitting
+2025-05-22 06:01:52,632 - INFO - Looking for Place Bid button
+2025-05-22 06:01:54,365 - INFO - Clicked Place Bid button using selector: //fl-button[@fltrackinglabel='PlaceBidButton']//button[contains(normalize-space(.), 'Place Bid')]
+2025-05-22 06:01:54,365 - INFO - Bid placed successfully
+2025-05-22 06:01:58,110 - INFO - Driver closed
