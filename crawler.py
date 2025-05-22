@@ -11,6 +11,7 @@ from scrapers.peopleperhour import PeoplePerHourScraper
 import concurrent.futures
 from collections import defaultdict
 import pandas as pd
+import os
 
 # Configure logging
 setup_logging()
@@ -27,7 +28,11 @@ def run_scraper(scraper_class, query, db_name):
 # Main function to run scrapers
 def main():
     db_name = 'jobs.db'
-    query = 'software'
+    # Support environment variables for Streamlit integration
+    query = os.environ.get('CRAWL_QUERY', 'software')
+    max_pages = int(os.environ.get('CRAWL_MAX_PAGES', '5'))
+    only_scrapers = os.environ.get('CRAWL_SCRAPERS')
+    push_to_db = os.environ.get('CRAWL_PUSH_DB', '1') == '1'
 
     # Store initial job counts
     temp_storage = DataStorage(output_format='sqlite', db_name=db_name)
@@ -52,6 +57,9 @@ def main():
         UpworkScraper,
         PeoplePerHourScraper
     ]
+    if only_scrapers:
+        only_scraper_names = set(only_scrapers.split(','))
+        scraper_classes = [cls for cls in scraper_classes if cls.__name__ in only_scraper_names]
 
     # Run scrapers in parallel, each with its own DataStorage/connection
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(scraper_classes)) as executor:
@@ -65,35 +73,41 @@ def main():
                 logging.error(f"{scraper_name} generated an exception: {e}")
 
     # After all threads are done, deduplicate and summarize in main thread
-    storage = DataStorage(output_format='sqlite', db_name=db_name)
-    deduplicate_jobs(storage.conn)
-
-    # Print summary of jobs found in this run
-    print("\n========== NEW JOBS FOUND IN THIS RUN ==========")
-    job_counts = pd.read_sql_query("SELECT source, COUNT(*) as count FROM jobs GROUP BY source", storage.conn)
-    total_new_jobs = 0
-    print("\nBreakdown by source:")
-    for _, row in job_counts.iterrows():
-        source = row['source']
-        count = row['count']
-        new_jobs = count - initial_counts.get(source, 0)
-        total_new_jobs += max(new_jobs, 0)
-        print(f"  {source}: {max(new_jobs, 0)} new jobs")
-    print(f"\nTotal new jobs found: {total_new_jobs}")
-    print("=============================================")
-
-    # Log job counts per source
-    logging.info(f"Job counts by source:\n{job_counts}")
-
-    # Check for duplicates
-    df_duplicates = pd.read_sql_query("SELECT link, COUNT(*) as count FROM jobs GROUP BY link HAVING count > 1", storage.conn)
-    logging.info(f"Duplicates found:\n{df_duplicates}")
-
-    # Check for missing fields (now everything should be at least 'non')
-    df_missing = pd.read_sql_query("SELECT * FROM jobs WHERE title IS NULL OR description IS NULL OR link IS NULL OR company IS NULL OR source IS NULL OR location IS NULL", storage.conn)
-    logging.info(f"Jobs with missing fields:\n{df_missing}")
-
-    del storage
+    if push_to_db:
+        storage = DataStorage(output_format='sqlite', db_name=db_name)
+        deduplicate_jobs(storage.conn)
+        # Print summary of jobs found in this run
+        print("\n========== NEW JOBS FOUND IN THIS RUN ==========")
+        job_counts = pd.read_sql_query("SELECT source, COUNT(*) as count FROM jobs GROUP BY source", storage.conn)
+        total_new_jobs = 0
+        print("\nBreakdown by source:")
+        for _, row in job_counts.iterrows():
+            source = row['source']
+            count = row['count']
+            new_jobs = count - initial_counts.get(source, 0)
+            total_new_jobs += max(new_jobs, 0)
+            print(f"  {source}: {max(new_jobs, 0)} new jobs")
+        print(f"\nTotal new jobs found: {total_new_jobs}")
+        print("=============================================")
+        # Log job counts per source
+        logging.info(f"Job counts by source:\n{job_counts}")
+        # Check for duplicates
+        df_duplicates = pd.read_sql_query("SELECT link, COUNT(*) as count FROM jobs GROUP BY link HAVING count > 1", storage.conn)
+        logging.info(f"Duplicates found:\n{df_duplicates}")
+        # Check for missing fields (now everything should be at least 'non')
+        df_missing = pd.read_sql_query("SELECT * FROM jobs WHERE title IS NULL OR description IS NULL OR link IS NULL OR company IS NULL OR source IS NULL OR location IS NULL", storage.conn)
+        logging.info(f"Jobs with missing fields:\n{df_missing}")
+        del storage
+    else:
+        # Just print jobs found by each scraper (no DB write)
+        print("\n========== JOBS FOUND (NOT PUSHED TO DB) ==========")
+        for scraper_class in scraper_classes:
+            storage = DataStorage(output_format='sqlite', db_name=db_name)
+            jobs = pd.read_sql_query(f"SELECT * FROM jobs WHERE source = '{scraper_class.__name__.replace('Scraper','')}' ORDER BY timestamp DESC LIMIT 10", storage.conn)
+            print(f"\n--- {scraper_class.__name__} ---")
+            print(jobs[['title','company','location','link']].to_string(index=False))
+            del storage
+        print("=============================================")
 
 if __name__ == '__main__':
     main()

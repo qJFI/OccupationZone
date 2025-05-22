@@ -1,6 +1,8 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from auth import login, logout, get_current_user
+import importlib
+import os
 
 st.set_page_config(page_title="Job Application Manager", layout="wide")
 
@@ -38,7 +40,7 @@ if not user:
 # Navigation
 selected = option_menu(
     menu_title="",  # appears inside navbar
-    options=["Job Search", "Saved Jobs", "Applications", "Resume Manager", "Analytics", "Settings"],
+    options=["Job Search", "Saved Jobs", "Applications", "Resume Manager", "Analytics", "Settings", "Crawl More"],
     icons=["search", "bookmark", "check2-circle", "file-earmark-person", "bar-chart", "gear"],
     menu_icon="briefcase",
     default_index=0,
@@ -69,3 +71,6 @@ elif selected == "Analytics":
 elif selected == "Settings":
     from my_pages.settings import settings_page
     settings_page()
+elif selected == "Crawl More":
+    from my_pages.crawl_more import crawl_more_page
+    crawl_more_page()
