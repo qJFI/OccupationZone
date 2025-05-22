@@ -9,7 +9,7 @@ def login():
         if username and password:
             st.session_state["user"] = username
             st.success("Logged in!")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Please enter username and password.")
 

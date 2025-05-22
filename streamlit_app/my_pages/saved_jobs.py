@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 from auth import get_current_user
+import uuid  # Add this for unique IDs
 
 def saved_jobs_page():
     st.header("Saved Jobs")
@@ -23,9 +24,11 @@ def saved_jobs_page():
             with st.expander(f"{row['title']} ({row['source']})"):
                 st.write(row['description'])
                 st.write(f"[View Job Posting]({row['link']})")
-                st.button("Apply Now", key=f"apply_{row['id']}")
+                # Generate a truly unique key using UUID
+                unique_id = str(uuid.uuid4())
+                st.button("Apply Now", key=f"apply_{row['id']}_{idx}_{unique_id}")
 
     conn.close()
 
 # Call the function to render the page
-saved_jobs_page() 
+# saved_jobs_page() 

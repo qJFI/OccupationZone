@@ -1,5 +1,6 @@
 import sys
 import os
+import uuid
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from job_applier import apply_to_job
 
@@ -42,10 +43,13 @@ def applications_page():
     # Job selection
     st.subheader("Select Jobs to Apply To")
     jobs_df['select'] = False
-    selected = st.data_editor(jobs_df[['select', 'title', 'company', 'location', 'source', 'link']],
-                              use_container_width=True,
-                              column_config={"select": st.column_config.CheckboxColumn("Apply?")},
-                              disabled=["title", "company", "location", "source", "link"])
+    selected = st.data_editor(
+        jobs_df[['select', 'title', 'company', 'location', 'source', 'link']],
+        use_container_width=True,
+        column_config={"select": st.column_config.CheckboxColumn("Apply?")},
+        disabled=["title", "company", "location", "source", "link"],
+        key="job_applications_data_editor"
+    )
     selected_jobs = jobs_df[selected['select']]
 
     # Resume selection
@@ -100,5 +104,5 @@ def applications_page():
 
     conn.close()
 
-# Only run if this is the main page
-applications_page() 
+# # Only run if this is the main page
+# applications_page()

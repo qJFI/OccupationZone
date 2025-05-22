@@ -77,26 +77,33 @@ def get_existing_resume_data(conn, user):
 def resume_manager_page():
     st.header("Resume Manager")
     user = get_current_user()
+    if not user:
+        st.warning("You must be logged in.")
+        st.stop()
     conn = sqlite3.connect("jobs.db")
-
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS resumes (
+            user TEXT,
+            filename TEXT,
+            labels TEXT,
+            content BLOB,
+            PRIMARY KEY (user, filename)
+        )
+    """)
+    st.write("Checkpoint: DB and user ready")
     # Get existing resume data
     existing_resume = get_existing_resume_data(conn, user)
-    
     # Show current resume status
     if existing_resume is not None:
         st.info(f"Current resume on file: {existing_resume['filename']}")
-    
     # Upload resume section
-    uploaded_file = st.file_uploader("Upload or Update Resume", type=["pdf", "docx"])
-    
+    uploaded_file = st.file_uploader("Upload or Update Resume", type=["pdf", "docx"], key=f"resume_upload_{user}")
     # Initialize labels dictionary
     labels_dict = get_default_labels()
     updated_labels = {}
-
     if uploaded_file is not None:
         resume_content = uploaded_file.read()
         st.success("Resume uploaded successfully!")
-
         # Display the uploaded PDF
         if uploaded_file.type == "application/pdf":
             st.subheader("Resume Preview")
@@ -112,10 +119,8 @@ def resume_manager_page():
                 labels_dict.update(existing_labels)
             except Exception as e:
                 st.error(f"Error loading existing labels: {str(e)}")
-
     # Display form for labels
     st.subheader("Resume Information")
-    
     # Group labels by category
     categories = {
         "Personal Information": ["name", "age", "national_id", "phone", "email", "location", "linkedin_profile"],
@@ -124,10 +129,8 @@ def resume_manager_page():
         "Additional Information": ["languages", "projects", "achievements", "references"],
         "Job Application Specific": ["salary_expectations", "availability", "preferred_work_type", "notice_period", "visa_status"]
     }
-    
     # Create tabs for different categories
     category_tabs = st.tabs(list(categories.keys()))
-    
     # Display fields in tabs
     for tab, (category, fields) in zip(category_tabs, categories.items()):
         with tab:
@@ -139,25 +142,21 @@ def resume_manager_page():
                         value=labels_dict.get(field, ""),
                         key=f"{category}_{field}"
                     )
-
     # Custom labels section
     with st.expander("Add Custom Labels"):
         custom_label_key = st.text_input("New Label Name")
         custom_label_value = st.text_input("Label Value")
         if custom_label_key and custom_label_value:
             updated_labels[custom_label_key] = custom_label_value
-
     # Save button
     if st.button("Save Resume and Information"):
         if uploaded_file is not None or existing_resume is not None:
             try:
                 # Convert labels dictionary to JSON string
                 labels_json = json.dumps(updated_labels)
-                
                 # Prepare content and filename
                 content = resume_content if uploaded_file is not None else existing_resume['content']
                 filename = uploaded_file.name if uploaded_file is not None else existing_resume['filename']
-                
                 # Save resume metadata to database
                 conn.execute(
                     """
@@ -172,8 +171,6 @@ def resume_manager_page():
                 st.error(f"Error saving resume: {str(e)}")
         else:
             st.warning("Please upload a resume first.")
-
     conn.close()
 
-# Remove the function call at the bottom
-# The function will be called by the main app when needed 
+# resume_manager_page()

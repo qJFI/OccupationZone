@@ -36,5 +36,5 @@ def analytics_page():
 
     conn.close()
 
-# Call the function to render the page
-analytics_page() 
+# # Call the function to render the page
+# analytics_page() 
